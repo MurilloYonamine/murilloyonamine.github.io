@@ -1,168 +1,57 @@
-:root {
-    --background-color: #EAE7DC;
-    --primary-color: #64323d;
-    --text-color: #000F08;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: Roboto;
-}
-
 body {
-    background-color: var(--background-color);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #111;
+  color: white;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1rem;
 }
 
 .name {
-    color: var(--primary-color);
-    font-size: 96px;
-    font-weight: bold;
-    text-align: center;
-
-    padding-top: 25vh;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .role {
-    color: var(--text-color);
-    font-size: 48px;
-    font-family: Roboto;
-}
-
-.logo-container {
-    padding-top: 4vh;
-    text-align: center;
-
-}
-
-.logo {
-    justify-content: space-around;
-    padding: 50px;
-    cursor: pointer;
-    width: 15%;
-
-    filter: brightness(0) saturate(100%);
-    transition: filter 0.2s ease;
-
-}
-
-.logo:hover {
-    filter: brightness(0) saturate(100%) invert(17%) sepia(29%) saturate(720%) hue-rotate(316deg) brightness(92%) contrast(86%);
+  font-size: 1.5rem;
+  color: #ccc;
 }
 
 .button-see-more-container {
-    padding-top: 4vh;
+  margin: 20px 0;
 }
 
 .button-see-more {
-    align-items: center;
-    background-color: var(--text-color);
-    border: 0;
-    border-radius: 100px;
-    box-sizing: border-box;
-    color: var(--background-color);
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 24px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 20px;
-    max-width: 480px;
-    min-height: 60px;
-    min-width: 0px;
-    overflow: hidden;
-    padding: 0px;
-    padding-left: 60px;
-    padding-right: 60px;
-    text-align: center;
-    touch-action: manipulation;
-    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
 
-.button-see-more:hover,
-.button-see-more:focus {
-    background-color: var(--primary-color);
-    color: #ffffff;
+.button-see-more:hover {
+  background-color: #666;
 }
 
-.button-see-more:active {
-    background: #09223b;
-    color: rgb(255, 255, 255, .7);
+.logo-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.button-see-more:disabled {
-    cursor: not-allowed;
-    background: rgba(0, 0, 0, .08);
-    color: rgba(0, 0, 0, .3);
-}
-
-@media (max-width: 1200px) {
-    .name {
-        font-size: 48px;
-        padding-top: 15vh;
-    }
-
-    .role {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .logo {
-        flex-direction: column;
-        width: 30%;
-        padding: 20px;
-    }
-
-    .button-see-more {
-        font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
-        min-height: 50px;
-    }
-
-    .container {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 48px;
-        padding-top: 15vh;
-    }
-
-    .role {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .logo {
-        flex-direction: column;
-        width: 30%;
-        padding: 20px;
-    }
-
-    .button-see-more {
-        font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
-        min-height: 50px;
-    }
-
-    .container {
-        padding: 0 20px;
-    }
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
