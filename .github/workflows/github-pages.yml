@@ -1,7 +1,7 @@
 name: 📦 Build and deploy ASP.NET Core to GitHub Pages
 
 env:
-  DOTNET_VERSION: '9.0'  # 🧰 Versão do .NET
+  DOTNET_VERSION: '9.0'  # 🧰 .NET version
 
 on:
   push:
@@ -22,15 +22,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout do código
+      - name: 📥 Checkout code
         uses: actions/checkout@v4
 
-      - name: ⚙️ Setup do .NET
+      - name: ⚙️ Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: 🧠 Cache de dependências
+      - name: 🧠 Cache dependencies
         uses: actions/cache@v4
         with:
           path: |
@@ -41,28 +41,28 @@ jobs:
             ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
             ${{ runner.os }}-nuget-
 
-      - name: 🔧 Restaurar dependências
+      - name: 🔧 Restore dependencies
         run: dotnet restore
 
-      - name: 🏗️ Build do projeto
+      - name: 🏗️ Build project
         run: dotnet build --configuration Release --no-restore
 
-      - name: ✅ Rodar testes (opcional)
+      - name: ✅ Run tests (optional)
         run: dotnet test --no-build --configuration Release --verbosity normal
 
-      - name: 🚚 Publicar projeto
+      - name: 🚚 Publish project
         run: dotnet publish -c Release -o ./publish --no-build
 
-      - name: ⚙️ Configurar GitHub Pages
+      - name: ⚙️ Configure GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: ⬆️ Fazer upload da build para GitHub Pages
+      - name: ⬆️ Upload build to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./publish/wwwroot
 
   deploy:
-    name: 🚀 Deploy para GitHub Pages
+    name: 🚀 Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -70,6 +70,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
-      - name: 📤 Deploy no GitHub Pages
+      - name: 📤 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
