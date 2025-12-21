@@ -1,0 +1,3 @@
+/home/murillo/Documents/portfolio/build/CMakeFiles/portfolio.dir
+/home/murillo/Documents/portfolio/build/CMakeFiles/edit_cache.dir
+/home/murillo/Documents/portfolio/build/CMakeFiles/rebuild_cache.dir

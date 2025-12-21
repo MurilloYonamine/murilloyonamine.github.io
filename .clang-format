@@ -1,0 +1,38 @@
+BasedOnStyle: LLVM                 # Use LLVM as the base style
+IndentWidth: 4                    # Each indentation level equals 4 spaces (or 1 tab)
+TabWidth: 4                       # A tab is displayed as 4 spaces
+UseTab: ForIndentation           # Use tabs for indentation, spaces for alignment
+
+ColumnLimit: 120                 # Lines longer than 120 characters will be wrapped (use 0 to disable)
+
+BreakBeforeBraces: Attach        # Place opening braces on the same line (e.g., K&R / Stroustrup style)
+BraceWrapping:
+  AfterFunction: false           # Don't put opening brace of functions on a new line
+  AfterControlStatement: false   # Don't put opening brace of if/for/while on a new line
+  AfterEnum: false               # Don't wrap enums
+  AfterStruct: false             # Don't wrap structs
+  AfterClass: false              # Don't wrap classes
+  AfterNamespace: false          # Don't wrap namespaces
+  AfterUnion: false              # Don't wrap unions
+  BeforeElse: false              # Place `else` on the same line as closing `}`
+  BeforeCatch: false             # Place `catch` on the same line as closing `}`
+  IndentBraces: false            # Don't indent braces (`{` stays aligned with the statement)
+
+IndentCaseLabels: true           # Indent `case` and `default` labels inside switch statements
+
+AllowShortFunctionsOnASingleLine: Inline   # Allow short functions in a single line
+AllowShortIfStatementsOnASingleLine: false # Force `if` statements to span multiple lines
+AllowShortLoopsOnASingleLine: false        # Force loops to span multiple lines
+AllowShortCaseLabelsOnASingleLine: false   # Force `case` labels to span multiple lines
+
+SpaceBeforeParens: ControlStatements   # Add space before `(` in `if`, `for`, `while`, etc.
+SpacesInParentheses: false            # No space inside parentheses: `f(x)` not `f( x )`
+SpacesInSquareBrackets: false         # No space inside square brackets
+SpaceInEmptyParentheses: false        # No space in empty parentheses: `f()` not `f( )`
+SpaceBeforeAssignmentOperators: true  # Add space around `=`
+SpaceAfterCStyleCast: false           # No space after C-style casts: `(int)x`
+
+AlignTrailingComments: true           # Align comments at the end of lines
+AlignConsecutiveAssignments: true     # Vertically align consecutive assignments
+AlignConsecutiveDeclarations: true    # Vertically align consecutive declarations
+SortIncludes: false                   # Don't auto-sort includes
