@@ -13,13 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        submodules: true # Necessary if you include Crow as a submodule
+        submodules: true 
 
     - name: Install dependencies
       run: |
         sudo apt-get update
         # Install C++ compiler and essential Crow dependencies
-        sudo apt-get install build-essential libtcmalloc-minimal4 cmake libboost-all-dev libcurl4-openssl-dev zlib1g-dev
+        sudo apt-get install cmake make libasio-dev
 
     - name: Configure CMake
       # Create a build directory and run cmake to configure the project
