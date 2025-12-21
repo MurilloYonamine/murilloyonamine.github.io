@@ -4,6 +4,6 @@ find_package(Crow)
 
 project(portfolio)
 
-target_link_libraries(portfolio PUBLIC Crow::Crow)
-
 add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PUBLIC Crow::Crow)
