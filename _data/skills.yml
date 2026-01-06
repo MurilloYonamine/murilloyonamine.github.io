@@ -1,0 +1,20 @@
+- name: Linguagens de Programação
+  keywords:
+      - JavaScript
+      - Python
+      - HTML/CSS
+      - TypeScript
+
+- name: Frameworks e Bibliotecas
+  keywords:
+      - React
+      - Node.js
+      - Vue.js
+      - Bootstrap
+
+- name: Ferramentas de Desenvolvimento
+  keywords:
+      - Git
+      - VS Code
+      - npm/yarn
+      - Webpack
