@@ -5,7 +5,7 @@ baseurl:
 url: https://murilloyonamine.github.io
 date_format: "ordinal"
 title: Murillo Portfolio
-subtitle: "Desenvolvedor Web"
+subtitle: "Game Developer"
 description: "Portfolio pessoal de Murillo Yonamine"
 keywords: Murillo, Yonamine, portfolio, desenvolvedor, web, programação
 timezone: America/Sao_Paulo
@@ -57,7 +57,7 @@ organization:
 organization_url: 
 github_username: MurilloYonamine
 location: São Paulo, Brasil
-email: murillo@example.com
+email: profissionalmurillogomes@gmail.com
 
 # ---------------- #
 #    Navigation    #
