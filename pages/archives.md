@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Arquivo
+title: Arquivos
 description: Todos os posts organizados por data
-keywords: arquivo
+keywords: arquivos
 comments: false
-menu: Arquivo
+menu: Arquivos
 permalink: /archives/
 ---
 

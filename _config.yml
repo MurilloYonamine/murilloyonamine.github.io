@@ -80,11 +80,6 @@ navs:
     href: /about/
     label: Sobre
 
-  -
-    href: /links/
-    label: Links
-    mobile-hidden: true
-
 # ---------------- #
 #       RSS        #
 # ---------------- #

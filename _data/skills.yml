@@ -1,20 +1,21 @@
 - name: Linguagens de Programação
   keywords:
-      - JavaScript
+      - C#
+      - C++
       - Python
       - HTML/CSS
-      - TypeScript
 
-- name: Frameworks e Bibliotecas
+- name: Game Development
   keywords:
-      - React
-      - Node.js
-      - Vue.js
-      - Bootstrap
+      - Unity
+      - Game Design
+      - 2D/3D Games
+      - Game Jams
 
 - name: Ferramentas de Desenvolvimento
   keywords:
+      - Unity Editor
+      - Visual Studio
       - Git
+      - Github
       - VS Code
-      - npm/yarn
-      - Webpack
