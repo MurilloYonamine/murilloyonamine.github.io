@@ -4,7 +4,7 @@ title: Arquivos
 description: Todos os posts organizados por data
 keywords: arquivos
 comments: false
-menu: Arquivos
+menu: Blog
 permalink: /archives/
 ---
 

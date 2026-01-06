@@ -68,13 +68,15 @@ navs:
     label: Início
 
   -
-    href: /categories/
-    label: Categorias
-
-  -
-    href: /archives/
-    label: Arquivo
-    mobile-hidden: true
+    label: Blog
+    dropdown: true
+    subitems:
+      - 
+        href: /categories/
+        label: Categorias
+      -
+        href: /archives/
+        label: Arquivo
 
   -
     href: /about/

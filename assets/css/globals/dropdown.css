@@ -1,0 +1,115 @@
+/* Dropdown navigation styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: transparent;
+    z-index: 999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-top: 0px;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: #777 !important;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    margin-left: 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #333 !important;
+}
+
+.dropdown-content a.dropdown-active {
+    background-color: #d26911 !important;
+    color: white !important;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover::before {
+    display: block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle.selected {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 6px 10px 13px !important;
+    border-bottom: 2px solid #d26911 !important;
+}
+
+.dropdown-toggle::after {
+    content: " ▾";
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.dropdown-toggle.selected::after {
+    content: " ▴";
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dropdown {
+        display: block;
+        width: 100%;
+    }
+    
+    .dropdown-content {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .dropdown-content a {
+        padding: 6px 20px;
+        border-bottom: 1px solid #eee;
+        background-color: #f8f9fa;
+    }
+    
+    .dropdown:hover .dropdown-content,
+    .dropdown-content:hover,
+    .dropdown-active .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-toggle::after {
+        float: right;
+    }
+}

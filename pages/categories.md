@@ -4,7 +4,7 @@ title: Categorias
 description: Encontre todos os posts organizados por categoria
 keywords: categorias
 comments: false
-menu: Categorias
+menu: Blog
 permalink: /categories/
 ---
 
