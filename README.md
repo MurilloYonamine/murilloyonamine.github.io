@@ -1,10 +1,10 @@
 # Murillo Portfolio
 
-🚀 **Portfolio pessoal de Murillo Yonamine**
+**Portfolio pessoal de Murillo Yonamine**
 
 Este é meu site pessoal onde compartilho projetos, experiências e reflexões sobre desenvolvimento web e tecnologia.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Jekyll** - Gerador de sites estáticos
 - **GitHub Pages** - Hospedagem gratuita
@@ -12,7 +12,7 @@ Este é meu site pessoal onde compartilho projetos, experiências e reflexões s
 - **Markdown** - Para escrita de conteúdo
 - **YAML** - Configuração de dados
 
-## 📱 Funcionalidades
+## Funcionalidades
 
 - ✅ Design responsivo
 - ✅ Navegação intuitiva
@@ -22,7 +22,7 @@ Este é meu site pessoal onde compartilho projetos, experiências e reflexões s
 - ✅ Seção de habilidades técnicas
 
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
