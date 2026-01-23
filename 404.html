@@ -4,9 +4,17 @@ title: "404: Página não encontrada"
 permalink: /404.html
 ---
 
-<div class="not-found-container">
-  <h1>404</h1>
-  <h2>Página não encontrada</h2>
-  <p>Desculpe, mas a página que você procura não existe ou foi movida.</p>
-  <a href="/" class="back-home">Voltar para a página inicial</a>
+<div class="mid-section-cover">
+  <nav>
+    <h1>{{ site.author_name }}</h1>
+    {% include navigation.html %}
+  </nav>
+  <main class="sub-mid-section-cover">
+    <div class="not-found-content">
+      <h2 class="not-found-title">404</h2>
+      <h3 class="not-found-subtitle">Página não encontrada</h3>
+      <p class="not-found-message">Desculpe, mas a página que você procura não existe ou foi movida.</p>
+      <a href="/" class="back-home">Voltar para a página inicial</a>
+    </div>
+  </main>
 </div>
