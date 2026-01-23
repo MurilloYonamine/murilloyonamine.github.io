@@ -1,21 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{"/favicon.ico" | relative_url }}" type="image/x-icon" />
-    <link rel="dns-prefetch" href="https://{{ site.disqus.shortname }}.disqus.com">
-    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
-    <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}" media="none" onload="if(media!='all')media='all'">
-    <noscript><link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}"></noscript>
-    <link rel="dns-prefetch" href="www.googletagmanager.com">
-    <link rel="dns-prefetch" href="www.google-analytics.com">
-    <script defer src="{{"/assets/js/theme.js" | relative_url }}"></script>
-    <script defer src="{{"/assets/js/script.js" | relative_url }}"></script>
-    {% include analytics.html %}
-  </head>
-  <body{% if page.pagetype == 'blog' %} class="blog"{% endif %}>
-    {{ content }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{" /favicon.ico" | relative_url }}" type="image/x-icon" />
+  <link rel="dns-prefetch" href="https://{{ site.disqus.shortname }}.disqus.com">
+  <meta itemprop="description" name="description"
+    content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+  <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{" /assets/css/styles.css" | relative_url}}" media="none"
+    onload="if(media!='all')media='all'">
+  <noscript>
+    <link rel="stylesheet" href="{{" /assets/css/styles.css" | relative_url}}">
+  </noscript>
+  <link rel="dns-prefetch" href="www.googletagmanager.com">
+  <link rel="dns-prefetch" href="www.google-analytics.com">
+  <script defer src="{{" /assets/js/script.js" | relative_url }}"></script>
+  {% include analytics.html %}
+</head>
+<body{% if page.pagetype=='blog' %} class="blog" {% endif %}>
+  {% include theme-toggle.html %}
+  {{ content }}
   </body>
+
 </html>

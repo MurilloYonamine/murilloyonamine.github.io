@@ -24,14 +24,20 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Remove estilo padrão de listas */
+.dark-mode a {
+  color: var(--primary-background-color) !important;
+}
+
+.light-mode a {
+  color: var(--primary-text-color) !important;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Links base (evita layout shift no hover) */
 a {
   text-decoration: none;
   color: inherit;
@@ -42,13 +48,6 @@ a:hover {
   border-bottom-color: currentColor;
 }
 
-.dark-mode a {
-  color: var(--primary-background-color) !important;
-}
-
-.light-mode a {
-  color: var(--primary-text-color) !important;
-}
 
 /* =========================
    Home
@@ -118,10 +117,6 @@ a:hover {
   opacity: 1;
 }
 
-.dark-mode .nav-separator {
-  background: var(--primary-background-color);
-}
-
 .light-mode .nav-separator {
   background: var(--primary-text-color);
 }
@@ -144,6 +139,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid currentColor;
 
   padding: 10px 0;
 }
@@ -277,4 +273,43 @@ div.highlight {
 .error-actions {
   display: flex;
   gap: 24px;
+}
+
+/* =========================
+   Toggle Button
+   ========================= */
+
+.dark-mode .icon-dark svg {
+  stroke: #fff !important;
+}
+
+.icon-dark, .icon-light {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  top: 32px;
+  left: 32px;
+}
+
+.icon-dark,
+.icon-light {
+  display: none;
+}
+.dark-mode .icon-dark {
+  display: inline-block !important;
+}
+.light-mode .icon-light {
+  display: inline-block !important;
+}
+#theme-toggle-btn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
 }
