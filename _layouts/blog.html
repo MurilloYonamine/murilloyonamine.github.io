@@ -8,10 +8,11 @@ pagetype: blog
 {% else %}
 <div class="blogPage-categoryList">
     <ul>
-        <li><a href="{{ '/categories/' | relative_url }}">Categories</a> : </li>
+        <li><a href="{{ " /categories/" | relative_url }}">Categories</a> : </li>
         {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
-        <li><a href="{{ ('/categories/#' | append: category_name) | relative_url }}">{{ category_name }}</a></li>
+            {% capture category_slug %}{{ category_name | slugize }}{% endcapture %}
+            <li><a href="{{ ('/categories/#' | append: category_slug) | relative_url }}">{{ category_name }}</a></li>
         {% endfor %}
     </ul>
 </div>
