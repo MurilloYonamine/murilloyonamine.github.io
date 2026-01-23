@@ -1,19 +1,27 @@
+:root {
+  --primary-background-color: white;
+  --primary-text-color: #222;
+  --primary-highlight-color: #eeeeee;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-html {
-  --primary-background-color: white;
-  --primary-text-color: #222;
-  --primary-highlight-color: #eeeeee;
+body {
+  transition: background 0.1s ease-in, color 0.1s ease-in;
 }
 
-body {
+.dark-mode {
+  background-color: var(--primary-text-color);
+  color: var(--primary-background-color) !important;
+}
+
+.light-mode {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  transition: background 0.1s ease-in, color 0.1s ease-in;
 }
 
 /* Remove estilo padrão de listas */
@@ -26,12 +34,20 @@ ul {
 /* Links base (evita layout shift no hover) */
 a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: inherit;
   border-bottom: 2px solid transparent;
 }
 
 a:hover {
-  border-bottom-color: var(--primary-text-color);
+  border-bottom-color: currentColor;
+}
+
+.dark-mode a {
+  color: var(--primary-background-color) !important;
+}
+
+.light-mode a {
+  color: var(--primary-text-color) !important;
 }
 
 /* =========================
@@ -98,9 +114,18 @@ a:hover {
 .nav-separator {
   width: 100%;
   height: 2px;
-  background: var(--primary-text-color);
+  background: currentColor;
   opacity: 1;
 }
+
+.dark-mode .nav-separator {
+  background: var(--primary-background-color);
+}
+
+.light-mode .nav-separator {
+  background: var(--primary-text-color);
+}
+
 /* =========================
    Layout principal
    ========================= */
@@ -120,7 +145,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 2px solid var(--primary-text-color);
   padding: 10px 0;
 }
 
@@ -153,21 +177,6 @@ a:hover {
 
 .sub-mid-section-cover a {
   color: var(--primary-text-color);
-}
-
-/* =========================
-   Theme selector
-   ========================= */
-
-#themeSelector {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-
-  background: var(--primary-background-color);
-  color: var(--primary-text-color);
-  border-radius: 5px;
-  border: 0;
 }
 
 /* =========================

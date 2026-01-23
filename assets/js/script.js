@@ -1,30 +1,15 @@
-function onLoad() {
-  var themeSelector = document.getElementById('themeSelector');
-  for (var themeName in themeMap) {
-    var opt = document.createElement('option');
-    opt.value = themeName;
-    opt.innerHTML = capitalizeFirstLetter(themeName);
-    themeSelector.appendChild(opt);
-  }
-  if (localStorage.getItem('theme') != null) {
-    themeSelector.value = localStorage.getItem('theme');
-    toggleTheme();
-  }
-}
+localStorage.setItem('theme', 'dark-mode');
+localStorage.setItem('theme', 'light-mode');
 
 function toggleTheme() {
-  var themeName = themeSelector.value;
-  localStorage.setItem('theme', themeName);
-  var element = document.getElementsByTagName('html')[0];
-  changeTheme(element, themeMap[themeName]);
-}
+  if (document.body.classList.contains('light-mode')) {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark-mode');
+    return;
+  }
 
-function changeTheme(element, theme) {
-  element.style.setProperty("--primary-background-color", theme['background-color']);
-  element.style.setProperty("--primary-text-color", theme['text-color']);
-  element.style.setProperty("--primary-highlight-color", theme['highlight-color']);
-}
-
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+  document.body.classList.remove('dark-mode');
+  document.body.classList.add('light-mode');
+  localStorage.setItem('theme', 'light-mode');
 }
