@@ -4,12 +4,12 @@ title: Sobre
 permalink: /about/
 ---
 
-Sou Murillo Yonamine, desenvolvedor de jogos em formação, com foco em programação, sistemas de gameplay e prototipação. Atualmente curso Jogos Digitais, onde desenvolvo projetos que exploram tanto os aspectos técnicos quanto criativos do desenvolvimento de jogos.
+I'm Murillo Yonamine, a game developer in training, focused on programming, gameplay systems, and prototyping. I'm currently studying Digital Games, where I develop projects that explore both the technical and creative aspects of game development.
 
-Trabalho principalmente com Unity e C#, criando jogos 2D e 3D, sistemas de movimentação, mecânicas interativas e protótipos jogáveis. Tenho experiência com projetos acadêmicos, game jams e iniciativas pessoais, sempre buscando escrever código claro, testável e escalável.
+I mainly work with Unity and C#, creating 2D and 3D games, movement systems, interactive mechanics, and playable prototypes. I have experience with academic projects, game jams, and personal initiatives, always aiming to write clear, testable, and scalable code.
 
-No meu portfólio, você encontrará jogos completos, protótipos experimentais e projetos em andamento, publicados no itch.io, além de repositórios no GitHub que documentam meu processo de aprendizado, minhas decisões técnicas e minha evolução como programador.
+In my portfolio, you'll find complete games, experimental prototypes, and ongoing projects published on itch.io, as well as repositories on GitHub that document my learning process, technical decisions, and evolution as a programmer.
 
-Tenho interesse especial em gameplay systems, design técnico, ferramentas internas e arquitetura de código, e estou constantemente estudando novas tecnologias e abordagens para melhorar a qualidade dos meus projetos.
+I have a special interest in gameplay systems, technical design, internal tools, and code architecture, and I'm constantly studying new technologies and approaches to improve the quality of my projects.
 
-Este site reúne meus trabalhos, experimentos e estudos, uma visão prática do que sei fazer hoje e do que estou construindo para o futuro.
+This site brings together my work, experiments, and studies—a practical view of what I can do today and what I'm building for the future.
