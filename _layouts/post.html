@@ -7,17 +7,13 @@ layout: description
 <div class="post-footer">
   <div class="post-categories">
     Categories :
-    {% if post %}
-    {% assign categories = post.categories %}
-    {% else %}
     {% assign categories = page.categories %}
-    {% endif %}
     {% for category in categories %}
-    {% capture category_slug %}{{ category | slugize }}{% endcapture %}
-    <a href="{{ ('/categories/#' | append: category_slug) | relative_url }}">{{ category }}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
+        {% assign category_slug = category | slugize %}
+        <a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{ category }}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
-  </div>
+</div>
   <div>{% include share_buttons.html %}</div>
 </div>
 {% if site.disqus.shortname and page.comments %}
