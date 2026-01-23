@@ -3,12 +3,14 @@ disqus:
   shortname: https-murilloyonamine-github-io
 # Adapte as opções abaixo conforme necessário
 
-url: ""
 baseurl: ""
+url: "https://murilloyonamine.github.io"
 title: "Novo Portfolio Jekyll 4"
 description: "Site migrado para Jekyll 4.x"
 author_name: "Murillo"
 resume_url: "/assets/files/resume.pdf"
+future: true
+permalink: /blog/:year/:month/:day/:title/
 
 # Plugins
 plugins:
