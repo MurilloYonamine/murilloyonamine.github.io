@@ -12,4 +12,4 @@ No meu portfólio, você encontrará jogos completos, protótipos experimentais 
 
 Tenho interesse especial em gameplay systems, design técnico, ferramentas internas e arquitetura de código, e estou constantemente estudando novas tecnologias e abordagens para melhorar a qualidade dos meus projetos.
 
-Este site reúne meus trabalhos, experimentos e estudos — uma visão prática do que sei fazer hoje e do que estou construindo para o futuro.
+Este site reúne meus trabalhos, experimentos e estudos, uma visão prática do que sei fazer hoje e do que estou construindo para o futuro.
