@@ -8,8 +8,7 @@
   <meta itemprop="description" name="description"
     content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
   <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" media="none"
-    onload="if(media!='all')media='all'">
+  <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   </noscript>
