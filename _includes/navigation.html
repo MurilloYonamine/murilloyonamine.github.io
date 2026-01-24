@@ -1,7 +1,16 @@
 <ul>
-  <li><a href="{{ '/' | relative_url }}">Home</a></li>
-  <li><a href="{{ 'about/' | relative_url }}">About</a></li>
-  <li><a href="{{ 'blog/' | relative_url }}">Blog</a></li>
-  <li><a href="{{ 'projects/' | relative_url }}">Projects</a></li>
-  <li><a href="{{ site.resume_url | relative_url }}">Resume</a></li>
+  {% assign home_link = '/' | relative_url %}
+  <li class="{% if page.url == home_link %}active{% endif %}"><a href="{{ home_link }}">Home</a></li>
+
+  {% assign about_link = 'about/' | relative_url %}
+  <li class="{% if page.url == about_link or page.url contains about_link %}active{% endif %}"><a href="{{ about_link }}">About</a></li>
+
+  {% assign blog_link = 'blog/' | relative_url %}
+  <li class="{% if page.url == blog_link or page.url contains blog_link %}active{% endif %}"><a href="{{ blog_link }}">Blog</a></li>
+
+  {% assign projects_link = 'projects/' | relative_url %}
+  <li class="{% if page.url == projects_link or page.url contains projects_link %}active{% endif %}"><a href="{{ projects_link }}">Projects</a></li>
+
+  {% assign resume_link = site.resume_url | relative_url %}
+  <li class="{% if page.url == resume_link or page.url contains resume_link %}active{% endif %}"><a href="{{ resume_link }}">Resume</a></li>
 </ul>

@@ -355,6 +355,11 @@ a:hover {
   text-align: center;
 }
 
+.mid-section-cover nav li.active a {
+  border-bottom-color: currentColor;
+  font-weight: 700;
+}
+
 /* =========================
    Conteúdo
    ========================= */
