@@ -20,6 +20,13 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-minifier
   - jemoji
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: /blog/page/:num/
+
   
 # Collections
 collections:

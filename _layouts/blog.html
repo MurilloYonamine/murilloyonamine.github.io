@@ -18,12 +18,7 @@ pagetype: blog
 </div>
 <hr class="category-separator">
 <ul class="blog-list">
-    {% if paginator and paginator.posts %}
-        {% assign recent_posts = paginator.posts | sort: 'date' | reverse %}
-    {% else %}
-        {% assign recent_posts = site.posts | sort: 'date' | reverse %}
-    {% endif %}
-    {% for post in recent_posts %}
+    {% for post in paginator.posts %}
     <li>
         <a class="blog-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="date">{{ post.date
             | date_to_string }}</span>
@@ -33,17 +28,16 @@ pagetype: blog
 </ul>
 {% endif %}
 {% if paginator.total_pages > 1 %}
-<ul>
-    {% if paginator.previous_page %}
-    <li>
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li>
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-    </li>
-    {% endif %}
-</ul>
+<nav class="pagination" role="navigation">
+    <div class="pagination-left">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Previous</a>
+        {% endif %}
+    </div>
+    <div class="pagination-right">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Next</a>
+        {% endif %}
+    </div>
+</nav>
 {% endif %}
-

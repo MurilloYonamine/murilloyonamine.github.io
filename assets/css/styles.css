@@ -214,11 +214,19 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-  .projects-tags { display: block; }
-  .projects-tags li { display: inline-block; margin-right: 10px; }
+  .projects-tags {
+    display: block;
+  }
+
+  .projects-tags li {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 
-.dark-mode .projects-tags-wrap { border-color: rgba(255,255,255,0.12); }
+.dark-mode .projects-tags-wrap {
+  border-color: rgba(255, 255, 255, 0.12);
+}
 
 .project-meta {
   margin-bottom: 8px;
@@ -325,7 +333,7 @@ a:hover {
 }
 
 .blog-list li {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .blog-list li .excerpt {
@@ -364,8 +372,49 @@ a:hover {
 hr.category-separator {
   border: 0;
   border-bottom: 2px solid currentColor;
-  margin: 8px 0 22px 0;
+  margin: 8px 0 15px 0;
   clear: both;
+}
+
+/* Paginação */
+.pagination-wrap {
+  margin-top: 12px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a {
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: inherit;
+}
+
+.pagination a:hover {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.pagination .active span {
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.pagination-prev a,
+.pagination-next a {
+  font-weight: 600;
 }
 
 /* =========================
@@ -432,7 +481,8 @@ div.highlight {
   stroke: #fff !important;
 }
 
-.icon-dark, .icon-light {
+.icon-dark,
+.icon-light {
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -444,12 +494,15 @@ div.highlight {
 .icon-light {
   display: none;
 }
+
 .dark-mode .icon-dark {
   display: inline-block !important;
 }
+
 .light-mode .icon-light {
   display: inline-block !important;
 }
+
 #theme-toggle-btn {
   position: fixed;
   top: 16px;
@@ -467,14 +520,17 @@ div.highlight {
 .dark-mode .project-title {
   color: var(--primary-background-color) !important;
 }
+
 .dark-mode .project-excerpt {
-  color: rgba(255,255,255,0.85) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
 }
+
 .dark-mode .project-meta,
 .dark-mode .project-date {
-  color: rgba(255,255,255,0.72) !important;
+  color: rgba(255, 255, 255, 0.72) !important;
 }
+
 .dark-mode .project-tag {
-  color: rgba(255,255,255,0.9) !important;
-  border-bottom-color: rgba(255,255,255,0.18);
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
