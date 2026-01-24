@@ -1,16 +1,26 @@
-<ul>
-  {% assign home_link = '/' | relative_url %}
-  <li class="{% if page.url == home_link %}active{% endif %}"><a href="{{ home_link }}">Home</a></li>
+<div class="nav-container">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+      <rect x="3" y="5" width="18" height="2" rx="1" fill="currentColor"/>
+      <rect x="3" y="11" width="18" height="2" rx="1" fill="currentColor"/>
+      <rect x="3" y="17" width="18" height="2" rx="1" fill="currentColor"/>
+    </svg>
+  </button>
 
-  {% assign about_link = 'about/' | relative_url %}
-  <li class="{% if page.url == about_link or page.url contains about_link %}active{% endif %}"><a href="{{ about_link }}">About</a></li>
+  <ul id="main-nav">
+    {% assign home_link = '/' | relative_url %}
+    <li class="{% if page.url == home_link %}active{% endif %}"><a href="{{ home_link }}">Home</a></li>
 
-  {% assign blog_link = 'blog/' | relative_url %}
-  <li class="{% if page.url == blog_link or page.url contains blog_link %}active{% endif %}"><a href="{{ blog_link }}">Blog</a></li>
+    {% assign about_link = 'about/' | relative_url %}
+    <li class="{% if page.url == about_link or page.url contains about_link %}active{% endif %}"><a href="{{ about_link }}">About</a></li>
 
-  {% assign projects_link = 'projects/' | relative_url %}
-  <li class="{% if page.url == projects_link or page.url contains projects_link %}active{% endif %}"><a href="{{ projects_link }}">Projects</a></li>
+    {% assign blog_link = 'blog/' | relative_url %}
+    <li class="{% if page.url == blog_link or page.url contains blog_link %}active{% endif %}"><a href="{{ blog_link }}">Blog</a></li>
 
-  {% assign resume_link = site.resume_url | relative_url %}
-  <li class="{% if page.url == resume_link or page.url contains resume_link %}active{% endif %}"><a href="{{ resume_link }}">Resume</a></li>
-</ul>
+    {% assign projects_link = 'projects/' | relative_url %}
+    <li class="{% if page.url == projects_link or page.url contains projects_link %}active{% endif %}"><a href="{{ projects_link }}">Projects</a></li>
+
+    {% assign resume_link = site.resume_url | relative_url %}
+    <li class="{% if page.url == resume_link or page.url contains resume_link %}active{% endif %}"><a href="{{ resume_link }}">Resume</a></li>
+  </ul>
+</div>

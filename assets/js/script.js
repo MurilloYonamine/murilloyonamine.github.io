@@ -25,4 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('light-mode');
   }
   updateThemeIcon();
+  // Navigation toggle for mobile
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (navToggle && mainNav) {
+    navToggle.addEventListener('click', function () {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      mainNav.classList.toggle('open');
+      document.body.classList.toggle('nav-open');
+    });
+  }
 });

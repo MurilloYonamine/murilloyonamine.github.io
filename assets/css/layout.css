@@ -111,3 +111,155 @@
     border-bottom-color: currentColor;
     font-weight: 700;
 }
+
+/* Mobile: hamburger toggle */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .mid-section-cover nav h1 {
+        font-size: 28px;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        margin-left: 8px;
+    }
+
+    /* Hide any nav lists inside main header or inside .nav-link (home layout) */
+    .mid-section-cover nav ul,
+    .nav-link ul,
+    .nav-container ul {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        margin: 8px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Drawer behaviour: when open, the list becomes a fixed right-side panel */
+    .mid-section-cover nav ul.open,
+    .nav-link ul.open,
+    .nav-container ul.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: min(320px, 70vw);
+        padding: 64px 20px 20px 20px;
+        flex-direction: column;
+        gap: 18px;
+        margin: 0;
+        z-index: 1200;
+        align-items: flex-start;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.25);
+        transform: translateX(0);
+    }
+
+    .mid-section-cover nav li {
+        margin: 6px 0;
+    }
+}
+
+/* When nav is open, prevent body scroll */
+body.nav-open {
+    overflow: hidden;
+}
+
+/* Ensure nav container aligns items and places toggle at right */
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-toggle svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* Theme-specific nav adjustments */
+.dark-mode .mid-section-cover nav {
+    border-bottom-color: rgba(255,255,255,0.08);
+}
+
+.light-mode .mid-section-cover nav {
+    border-bottom-color: rgba(0,0,0,0.08);
+}
+
+.dark-mode .mid-section-cover nav a,
+.dark-mode .nav-link a,
+.dark-mode .nav-container a {
+    color: var(--primary-background-color) !important;
+}
+
+.light-mode .mid-section-cover nav a,
+.light-mode .nav-link a,
+.light-mode .nav-container a {
+    color: var(--primary-text-color) !important;
+}
+
+/* Mobile open background contrast */
+.dark-mode .mid-section-cover nav ul.open,
+.dark-mode .nav-link ul.open,
+.dark-mode .nav-container ul.open {
+    background: var(--primary-text-color);
+    color: var(--primary-background-color);
+    box-shadow: -16px 0 40px rgba(0,0,0,0.6);
+}
+
+.light-mode .mid-section-cover nav ul.open,
+.light-mode .nav-link ul.open,
+.light-mode .nav-container ul.open {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    box-shadow: -12px 0 30px rgba(0,0,0,0.08);
+}
+
+/* Tweak separator contrast */
+.dark-mode .nav-separator {
+    background: rgba(255,255,255,0.12);
+}
+
+/* Ensure nav toggle (hamburger) adapts to theme color */
+.nav-toggle {
+    color: inherit;
+}
+
+body.dark-mode .nav-toggle,
+.dark-mode .nav-toggle {
+    color: var(--primary-background-color) !important;
+}
+
+body.light-mode .nav-toggle,
+.light-mode .nav-toggle {
+    color: var(--primary-text-color) !important;
+}
+
+.nav-toggle svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+/* safety: explicit fill for theme variants */
+body.dark-mode .nav-toggle svg,
+.dark-mode .nav-toggle svg {
+    fill: var(--primary-background-color) !important;
+}
+
+body.light-mode .nav-toggle svg,
+.light-mode .nav-toggle svg {
+    fill: var(--primary-text-color) !important;
+}
