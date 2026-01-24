@@ -1,0 +1,59 @@
+/* Theme / dark-mode overrides */
+.dark-mode {
+    background-color: var(--primary-text-color);
+    color: var(--primary-background-color) !important;
+}
+
+.light-mode {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+.dark-mode .entries-tags-wrap {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-mode .entries-tags a,
+.dark-mode .entry-tag {
+    color: var(--primary-background-color) !important;
+}
+
+.light-mode .entries-tags a,
+.light-mode .entry-tag {
+    color: var(--primary-text-color) !important;
+}
+
+/* Ensure readability inside entries */
+.dark-mode .entry-meta,
+.dark-mode .entry-excerpt,
+.dark-mode .entry-title a {
+    color: var(--primary-background-color) !important;
+}
+
+.dark-mode .entry-date {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Project/entry dark-mode compatibility */
+.dark-mode .project-title,
+.dark-mode .entry-title {
+    color: var(--primary-background-color) !important;
+}
+
+.dark-mode .project-excerpt,
+.dark-mode .entry-excerpt {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark-mode .project-meta,
+.dark-mode .entry-meta,
+.dark-mode .project-date,
+.dark-mode .entry-date {
+    color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.dark-mode .project-tag,
+.dark-mode .entry-tag {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.18);
+}
