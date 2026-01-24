@@ -60,7 +60,7 @@ a:hover {
   align-items: center;
 
   width: 100%;
-  max-width: 400px;
+  max-width: 900px;
   height: 100vh;
   margin: auto;
 
@@ -69,9 +69,27 @@ a:hover {
 }
 
 .mid-section-home h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   margin: 10px;
+}
+
+@media (min-width: 700px) {
+  .mid-section-home h1 {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .mid-section-home {
+    max-width: 100%;
+  }
+
+  .mid-section-home h1 {
+    font-size: 2.0rem;
+    white-space: normal;
+    padding: 0 12px;
+  }
 }
 
 /* =========================
@@ -111,7 +129,7 @@ a:hover {
 }
 
 .nav-separator {
-  width: 100%;
+  width: 50%;
   height: 2px;
   background: currentColor;
   opacity: 1;
@@ -379,6 +397,7 @@ hr.category-separator {
 .pagination-wrap {
   margin-top: 12px;
 }
+
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -532,4 +551,48 @@ div.highlight {
 .dark-mode .project-tag {
   color: rgba(255, 255, 255, 0.9) !important;
   border-bottom-color: rgba(255, 255, 255, 0.18);
+}
+
+/* =========================
+   Logos bar (links under header)
+   ========================= */
+.logos-bar {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+}
+
+.logo-link img {
+  width: 48px;
+  height: auto;
+  display: block;
+}
+
+.dark-mode .logo-link img {
+  filter: invert(1) brightness(1.05);
+}
+
+.logo-caption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .logos-bar {
+    gap: 16px;
+  }
+
+  .logo-link img {
+    width: 48px;
+  }
 }

@@ -10,9 +10,9 @@ pagetype: blog
     <ul>
         <li><a href="{{ '/categories/' | relative_url }}">Categories</a> : </li>
         {% for category in site.categories %}
-            {% capture category_name %}{{ category | first }}{% endcapture %}
-            {% assign category_slug = category_name | slugize %}
-            <li><a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{ category_name }}</a></li>
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% assign category_slug = category_name | slugize %}
+        <li><a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{ category_name }}</a></li>
         {% endfor %}
     </ul>
 </div>

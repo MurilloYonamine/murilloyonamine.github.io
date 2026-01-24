@@ -3,15 +3,38 @@ title: Murillo Gomes Yonamine
 layout: default
 ---
 <div class="mid-section-home">
-    <h1><span>I am </span>{{ site.author_name }}</h1>
+    <h1>
+        <span>I am </span>
+        <span id="typewriter-text" data-phrases="{{ site.author_name }}||a game developer||a software engineer"></span>
+    </h1>
     <div class="nav-separator"></div>
+
     <div class="row sub-heading">
-        <div class="summary-about-me">
-            <p>{{ page.home_text }}</p>
-            {{ content }}
-        </div>
         <div class="nav-link">
             {% include navigation.html %}
         </div>
+        {{ content }}
+    </div>
+
+    <div class="logos-bar">
+        <a href="https://murilloyonamine.itch.io/" target="_blank" rel="noopener noreferrer" class="logo-link"
+            title="Itch.io">
+            <img src="/assets/img/logos/itch-io-logo.svg" alt="Itch.io logo">
+            <span class="logo-caption">itch.io</span>
+        </a>
+
+        <a href="https://github.com/MurilloYonamine" target="_blank" rel="noopener noreferrer" class="logo-link"
+            title="GitHub">
+            <img src="/assets/img/logos/github-logo.svg" alt="GitHub logo">
+            <span class="logo-caption">GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/murillo-yonamine/" target="_blank" rel="noopener noreferrer"
+            class="logo-link" title="LinkedIn">
+            <img src="/assets/img/logos/linkedin-logo.svg" alt="LinkedIn logo">
+            <span class="logo-caption">LinkedIn</span>
+        </a>
     </div>
 </div>
+
+<script src="/assets/js/typewritter_effect.js"></script>
