@@ -37,8 +37,6 @@
         padding: 0 12px;
     }
 }
-
-/* Sub-heading / About */
 .sub-heading {
     width: 80%;
     margin: 0 auto;
@@ -75,15 +73,11 @@
 .light-mode .nav-separator {
     background: var(--primary-text-color);
 }
-
-/* Main layout */
 .mid-section-cover {
     width: 90%;
     max-width: 900px;
     margin: 50px auto 0;
 }
-
-/* Header / Navegação */
 .mid-section-cover nav {
     display: flex;
     justify-content: space-between;

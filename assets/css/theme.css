@@ -23,7 +23,6 @@
     color: var(--primary-text-color) !important;
 }
 
-/* Ensure readability inside entries */
 .dark-mode .entry-meta,
 .dark-mode .entry-excerpt,
 .dark-mode .entry-title a {
@@ -34,7 +33,6 @@
     color: rgba(255, 255, 255, 0.65) !important;
 }
 
-/* Project/entry dark-mode compatibility */
 .dark-mode .project-title,
 .dark-mode .entry-title {
     color: var(--primary-background-color) !important;
