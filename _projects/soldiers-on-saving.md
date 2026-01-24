@@ -4,7 +4,7 @@ date: 2026-01-24
 contenttype: project
 tags: [Game Jam, Senac Jam, Unity]
 image: https://img.itch.zone/aW1nLzIyNDA4NjAxLnBuZw==/original/LvEuVx.png
-excerpt: "Soldiers On Saving — vencedor da SENAC Game Jam; um jogo de plataforma e puzzles onde você controla pequenos soldados com habilidades únicas para resgatar sua tropa." 
+excerpt: "Soldiers On Saving, vencedor da SENAC Game Jam; um jogo de plataforma e puzzles onde você controla pequenos soldados com habilidades únicas para resgatar sua tropa." 
 ---
 
 ![Soldiers On Saving](https://img.itch.zone/aW1nLzIyNDA4NjAxLnBuZw==/original/LvEuVx.png)

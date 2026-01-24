@@ -16,8 +16,14 @@ pagetype: blog
         {% endfor %}
     </ul>
 </div>
+<hr class="category-separator">
 <ul class="blog-list">
-    {% for post in paginator.posts %}
+    {% if paginator and paginator.posts %}
+        {% assign recent_posts = paginator.posts | sort: 'date' | reverse %}
+    {% else %}
+        {% assign recent_posts = site.posts | sort: 'date' | reverse %}
+    {% endif %}
+    {% for post in recent_posts %}
     <li>
         <a class="blog-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="date">{{ post.date
             | date_to_string }}</span>
@@ -26,7 +32,6 @@ pagetype: blog
     {% endfor %}
 </ul>
 {% endif %}
-<hr>
 {% if paginator.total_pages > 1 %}
 <ul>
     {% if paginator.previous_page %}
@@ -41,3 +46,4 @@ pagetype: blog
     {% endif %}
 </ul>
 {% endif %}
+

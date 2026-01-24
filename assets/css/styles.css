@@ -360,6 +360,14 @@ a:hover {
   margin-left: 0;
 }
 
+/* Linha separadora abaixo das categorias */
+hr.category-separator {
+  border: 0;
+  border-bottom: 2px solid currentColor;
+  margin: 8px 0 22px 0;
+  clear: both;
+}
+
 /* =========================
    Post footer
    ========================= */

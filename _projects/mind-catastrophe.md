@@ -4,7 +4,7 @@ date: 2026-01-24
 contenttype: project
 tags: [Unity, Game Jam, CTRL ALT Jam]
 image: https://img.itch.zone/aW1nLzE3MTA5MDY1LnBuZw==/original/4WjNE6.png
-excerpt: "Mind Catastrophe é um jogo desenvolvido para a CTRL ALT FRAME GameJam — uma experiência curta sobre estresse, sonhos e a jornada da Ana." 
+excerpt: "Mind Catastrophe é um jogo desenvolvido para a CTRL ALT FRAME GameJam, uma experiência curta sobre estresse, sonhos e a jornada da Ana." 
 ---
 
 ![Mind Catastrophe](https://img.itch.zone/aW1nLzE3MTA5MDY1LnBuZw==/original/4WjNE6.png)
