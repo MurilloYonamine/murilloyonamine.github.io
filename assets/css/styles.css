@@ -103,12 +103,6 @@ a:hover {
   justify-content: center;
 }
 
-.summary-about-me {
-  width: 50%;
-  text-align: right;
-  padding-right: 20px;
-}
-
 .nav-link {
   display: flex;
   justify-content: center;
@@ -381,52 +375,10 @@ a:hover {
    Blog
    ========================= */
 
-.blog-list {
-  padding-left: 0;
-}
-
-.blog-list li {
-  margin-bottom: 30px;
-}
-
-.blog-list li .excerpt {
-  font-size: 15px;
-}
-
-.blog-list li .blog-heading {
-  font-size: 25px;
-  font-weight: 800;
-}
-
 .blog-list li .date {
   font-size: 15px;
   opacity: 0.8;
   margin-left: 20px;
-}
-
-/* =========================
-   Categorias
-   ========================= */
-
-.blogPage-categoryList ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.blogPage-categoryList ul li {
-  margin: 10px;
-}
-
-.blogPage-categoryList ul li:first-child {
-  margin-left: 0;
-}
-
-/* Linha separadora abaixo das categorias */
-hr.category-separator {
-  border: 0;
-  border-bottom: 2px solid currentColor;
-  margin: 8px 0 15px 0;
-  clear: both;
 }
 
 /* Paginação */
@@ -570,21 +522,26 @@ div.highlight {
   z-index: 1000;
 }
 
-/* Improve contrast for project text in dark mode */
-.dark-mode .project-title {
+/* Improve contrast for project and entry text in dark mode */
+.dark-mode .project-title,
+.dark-mode .entry-title {
   color: var(--primary-background-color) !important;
 }
 
-.dark-mode .project-excerpt {
+.dark-mode .project-excerpt,
+.dark-mode .entry-excerpt {
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .dark-mode .project-meta,
-.dark-mode .project-date {
+.dark-mode .entry-meta,
+.dark-mode .project-date,
+.dark-mode .entry-date {
   color: rgba(255, 255, 255, 0.72) !important;
 }
 
-.dark-mode .project-tag {
+.dark-mode .project-tag,
+.dark-mode .entry-tag {
   color: rgba(255, 255, 255, 0.9) !important;
   border-bottom-color: rgba(255, 255, 255, 0.18);
 }
