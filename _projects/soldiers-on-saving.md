@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Soldiers On Saving"
 date: 2026-01-24
 contenttype: project

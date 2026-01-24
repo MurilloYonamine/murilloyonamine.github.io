@@ -150,117 +150,128 @@ a:hover {
 }
 
 /* Projects list: thumbnail left, content right */
-.project-list {
+.entry-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.project-item {
+.entry-item {
   display: flex;
   gap: 24px;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
-.project-thumb {
+.entry-thumb {
   flex: 0 0 220px;
   width: 220px;
   height: 140px;
   overflow: hidden;
 }
 
-.project-thumb a,
-.project-thumb img {
+.entry-thumb a,
+.entry-thumb img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.project-thumb img {
+.entry-thumb img {
   object-fit: cover;
 }
 
-.project-content {
+.entry-content {
   flex: 1 1 auto;
 }
 
-.project-title {
+.entry-title {
   margin: 0 0 8px 0;
   font-size: 1.6rem;
 }
 
-.project-excerpt {
+.entry-excerpt {
   margin: 0;
   color: #444;
 }
 
 /* Projects tags bar (similar to categories) */
-.projects-tags-wrap {
+.entries-tags-wrap {
   margin: 12px 0 18px 0;
   border-bottom: 2px solid currentColor;
   padding-bottom: 8px;
 }
 
-.projects-tags {
+.entries-tags {
   list-style: none;
   padding: 0;
   margin: 6px 0 0 0;
   display: inline-block;
 }
 
-.projects-tags li {
+.entries-tags li {
   display: inline-block;
   margin-right: 16px;
 }
 
-.projects-tags a {
+.entries-tags a {
   color: inherit;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
 
-.projects-tags a:hover {
+.entries-tags a:hover {
   border-bottom-color: currentColor;
 }
 
-.projects-tags a.active,
-.project-tag.active {
+.entries-tags a.active,
+.entry-tag.active {
   font-weight: 700;
   border-bottom-color: currentColor;
 }
 
 @media (max-width: 700px) {
-  .projects-tags {
+  .entries-tags {
     display: block;
   }
 
-  .projects-tags li {
+  .entries-tags li {
     display: inline-block;
     margin-right: 10px;
   }
 }
 
-.dark-mode .projects-tags-wrap {
+.dark-mode .entries-tags-wrap {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-.project-meta {
+.dark-mode .entries-tags a,
+.dark-mode .entry-tag {
+  color: var(--primary-background-color) !important;
+}
+
+.light-mode .entries-tags a,
+.light-mode .entry-tag {
+  color: var(--primary-text-color) !important;
+}
+
+.entry-meta {
   margin-bottom: 8px;
   color: #666;
   font-size: 0.95rem;
 }
 
-.project-date {
+.entry-date {
   display: inline-block;
   margin-right: 12px;
+  color: #999;
 }
 
-.project-tags {
+.entry-tags {
   display: inline-block;
 }
 
-.project-tag {
+.entry-tag {
   display: inline;
   background: transparent;
   color: inherit;
@@ -273,29 +284,49 @@ a:hover {
   transition: border-color 120ms ease-in-out, color 120ms ease-in-out;
 }
 
-.project-tag:hover {
+.entry-tag:hover {
   background: transparent;
   border-bottom-color: currentColor;
 }
 
 @media (max-width: 700px) {
-  .project-item {
+  .entry-item {
     flex-direction: column;
     gap: 12px;
   }
 
-  .project-thumb {
+  .entry-thumb {
     width: 100%;
     height: auto;
     flex: none;
   }
 
-  .project-thumb a,
-  .project-thumb img {
+  .entry-thumb a,
+  .entry-thumb img {
     width: 100%;
     height: auto;
   }
 }
+
+/* Garantir cores legíveis em dark-mode para textos dentro das entradas */
+.dark-mode .entry-meta,
+.dark-mode .entry-excerpt,
+.dark-mode .entry-title a {
+  color: var(--primary-background-color) !important;
+}
+
+/* Data deve ficar um pouco mais cinza em dark-mode (não totalmente branca) */
+.dark-mode .entry-date {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Forçar opacidade e cor das tags/links de categorias em dark-mode */
+.dark-mode .entries-tags a,
+.dark-mode .entry-tag {
+  color: var(--primary-background-color) !important;
+  opacity: 1 !important;
+}
+
 
 /* =========================
    Header / Navegação

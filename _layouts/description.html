@@ -5,6 +5,19 @@ layout: default
     <nav>
         <h1>{{ site.author_name }}</h1>
         {% include navigation.html %}
+        {% if page.url == '/categories/' or page.layout == 'categories' %}
+        {% if site.categories and site.categories != empty %}
+        <div class="projects-tags-wrap">
+            <strong>Categories :</strong>
+            <ul class="projects-tags">
+                {% for category in site.categories %}
+                {% capture category_name %}{{ category | first }}{% endcapture %}
+                <li><a href="{{ '/categories/#' | append: category_name | slugize }}">{{ category_name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% endif %}
     </nav>
     <main class="sub-mid-section-cover">
         {{ content }}

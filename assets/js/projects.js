@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   (function () {
     function normalize(s) { return (s || '').toString().trim().toLowerCase(); }
 
-    var tagLinks = document.querySelectorAll('.projects-tags a');
+    var tagLinks = document.querySelectorAll('.entries-tags a');
     if (!tagLinks || tagLinks.length === 0) return;
-    var itemTagLinks = document.querySelectorAll('.project-tag');
-    var projectItems = Array.prototype.slice.call(document.querySelectorAll('.project-item'));
+    var itemTagLinks = document.querySelectorAll('.entry-tag');
+    var projectItems = Array.prototype.slice.call(document.querySelectorAll('.entry-item'));
 
     function applyFilter(tag) {
       var t = normalize(tag);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
           item.style.display = 'none';
         }
       });
-      document.querySelectorAll('.projects-tags a, .project-tag').forEach(function (a) { a.classList.remove('active'); });
+      document.querySelectorAll('.entries-tags a, .entry-tag').forEach(function (a) { a.classList.remove('active'); });
       if (t && t !== 'all') {
         document.querySelectorAll('[data-tag="' + t + '"]').forEach(function (a) { a.classList.add('active'); });
       }
