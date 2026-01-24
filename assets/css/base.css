@@ -1,39 +1,39 @@
 :root {
-  --primary-background-color: white;
-  --primary-text-color: #222;
-  --primary-highlight-color: #eeeeee;
+    --primary-background-color: white;
+    --primary-text-color: #222;
+    --primary-highlight-color: #eeeeee;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  transition: background 0.1s ease-in, color 0.1s ease-in;
+    transition: background 0.1s ease-in, color 0.1s ease-in;
 }
 
 .dark-mode a {
-  color: var(--primary-background-color) !important;
+    color: var(--primary-background-color) !important;
 }
 
 .light-mode a {
-  color: var(--primary-text-color) !important;
+    color: var(--primary-text-color) !important;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid transparent;
 }
 
 a:hover {
-  border-bottom-color: currentColor;
+    border-bottom-color: currentColor;
 }

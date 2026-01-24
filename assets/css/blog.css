@@ -1,91 +1,91 @@
 /* Blog specific styles and pagination */
 .blog-list li .date {
-  font-size: 15px;
-  opacity: 0.8;
-  margin-left: 20px;
+    font-size: 15px;
+    opacity: 0.8;
+    margin-left: 20px;
 }
 
 .pagination-wrap {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 
 .pagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .pagination li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .pagination a {
-  padding: 6px 10px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: inherit;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: inherit;
 }
 
 .pagination a:hover {
-  border-color: rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 .pagination .active span {
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 4px;
-  background: transparent;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: transparent;
 }
 
 .pagination-prev a,
 .pagination-next a {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .post-footer {
-  margin-top: 50px;
+    margin-top: 50px;
 
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.highlight {
-  background: var(--primary-highlight-color);
-  padding: 5px;
-  border-radius: 5px;
-  margin: 10px 0;
-  overflow: auto;
+    background: var(--primary-highlight-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: auto;
 }
 
 .error-404 {
-  place-items: center;
-  text-align: center;
+    place-items: center;
+    text-align: center;
 }
 
 .error-404 h1 {
-  font-size: 6rem;
-  margin: 0;
+    font-size: 6rem;
+    margin: 0;
 }
 
 .error-404 h2 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 10px 0 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 10px 0 20px;
 }
 
 .error-404 p {
-  max-width: 420px;
-  margin-bottom: 30px;
-  opacity: 0.85;
+    max-width: 420px;
+    margin-bottom: 30px;
+    opacity: 0.85;
 }
 
 .error-actions {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }

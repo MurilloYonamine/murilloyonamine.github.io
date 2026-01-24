@@ -1,80 +1,80 @@
 /* Toggle button, icons and logos bar */
 .dark-mode .icon-dark svg {
-  stroke: #fff !important;
+    stroke: #fff !important;
 }
 
 .icon-dark,
 .icon-light {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  top: 32px;
-  left: 32px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    top: 32px;
+    left: 32px;
 }
 
 .icon-dark,
 .icon-light {
-  display: none;
+    display: none;
 }
 
 .dark-mode .icon-dark {
-  display: inline-block !important;
+    display: inline-block !important;
 }
 
 .light-mode .icon-light {
-  display: inline-block !important;
+    display: inline-block !important;
 }
 
 #theme-toggle-btn {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  background: none;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  padding: 0;
-  margin: 0;
-  z-index: 1000;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
 }
 
 .logos-bar {
-  display: flex;
-  gap: 56px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .logo-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
 }
 
 .logo-link img {
-  width: 48px;
-  height: auto;
-  display: block;
+    width: 48px;
+    height: auto;
+    display: block;
 }
 
 .dark-mode .logo-link img {
-  filter: invert(1) brightness(1.05);
+    filter: invert(1) brightness(1.05);
 }
 
 .logo-caption {
-  margin-top: 8px;
-  font-size: 0.95rem;
+    margin-top: 8px;
+    font-size: 0.95rem;
 }
 
 @media (max-width: 600px) {
-  .logos-bar {
-    gap: 16px;
-  }
+    .logos-bar {
+        gap: 16px;
+    }
 
-  .logo-link img {
-    width: 48px;
-  }
+    .logo-link img {
+        width: 48px;
+    }
 }
