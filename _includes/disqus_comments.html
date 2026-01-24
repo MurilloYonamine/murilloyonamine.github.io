@@ -4,9 +4,10 @@
     this.page.url = '{{ page.url | absolute_url }}';
     this.page.identifier = '{{ page.url | absolute_url }}';
   };
+  {% assign disqus_short = site.disqus.shortname | default: '' | replace: 'https-', '' | replace: 'https://', '' | replace: 'http://', '' %}
   (function () {
     var d = document, s = d.createElement('script');
-    s.src = 'https://https-murilloyonamine-github-io.disqus.com/embed.js';
+    s.src = 'https://{{ disqus_short }}.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();

@@ -1,6 +1,6 @@
 # Disqus
 disqus:
-  shortname: https-murilloyonamine-github-io
+  shortname: murilloyonamine-github-io
 # Adapte as opções abaixo conforme necessário
 
 baseurl: ""
@@ -20,7 +20,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-minifier
   - jemoji
-  - jekyll-paginate-v2
 
 pagination:
   enabled: true

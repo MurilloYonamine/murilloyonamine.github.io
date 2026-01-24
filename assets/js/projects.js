@@ -5,15 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var tagLinks = document.querySelectorAll('.entries-tags a');
     if (!tagLinks || tagLinks.length === 0) return;
     var itemTagLinks = document.querySelectorAll('.entry-tag');
-    var projectItems = Array.prototype.slice.call(document.querySelectorAll('.entry-item'));
+    var entries = Array.prototype.slice.call(document.querySelectorAll('.entry-item'));
 
     function applyFilter(tag) {
       var t = normalize(tag);
-      projectItems.forEach(function (item) {
+      entries.forEach(function (item) {
         var tags = normalize(item.getAttribute('data-tags'));
+        var tagsArr = tags === '' ? [] : tags.split(',').map(function(s){ return s.trim(); });
         if (!t || t === 'all') {
           item.style.display = '';
-        } else if (tags.split(',').indexOf(t) !== -1) {
+        } else if (tagsArr.indexOf(t) !== -1) {
           item.style.display = '';
         } else {
           item.style.display = 'none';

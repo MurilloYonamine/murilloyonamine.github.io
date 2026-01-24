@@ -3,7 +3,7 @@ layout: description
 ---
 {{ content }}
 
-{% if page.layout == 'projects' %}
+{% if page.permalink == '/projects/' %}
 <div class="entries-tags-wrap">
     <strong>Tags :</strong>
     <ul class="entries-tags">
@@ -29,7 +29,7 @@ layout: description
 <ul class="entry-list">
     {% assign project = 'project' %}
 
-    {% if page.contenttype == project or page.layout == 'projects' %}
+    {% if page.contenttype == project or page.permalink == '/projects/' %}
     {% comment %}Prefer the `projects` collection if present, fall back to posts{% endcomment %}
     {% if site.projects and site.projects != empty %}
     {% assign posts_collection = site.projects %}
@@ -70,6 +70,6 @@ layout: description
     {% endif %}
 </ul>
 
-{% if page.layout == 'projects' %}
+{% if page.permalink == '/projects/' %}
 <script defer src="{{ '/assets/js/projects.js' | relative_url }}"></script>
 {% endif %}
