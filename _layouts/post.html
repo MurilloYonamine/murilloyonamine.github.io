@@ -5,15 +5,17 @@ layout: description
 <small>{{ page.date | date_to_string }}</small>
 {{content}}
 <div class="post-footer">
-  <div class="post-categories">
-    Categories :
-    {% assign categories = page.categories %}
-    {% for category in categories %}
-        {% assign category_slug = category | slugize %}
-        <a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{ category }}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
-</div>
+  {% if page.categories and page.categories != empty %}
+    <div class="post-categories">
+      Categories :
+      {% assign categories = page.categories %}
+      {% for category in categories %}
+          {% assign category_slug = category | slugize %}
+          <a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{ category }}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
   <div>{% include share_buttons.html %}</div>
 </div>
 {% if site.disqus.shortname and page.comments %}

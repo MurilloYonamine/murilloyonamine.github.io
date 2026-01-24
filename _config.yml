@@ -20,3 +20,9 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-minifier
   - jemoji
+  
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
