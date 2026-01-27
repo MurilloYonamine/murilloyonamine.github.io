@@ -1,0 +1,46 @@
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+.about-figure .about-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-figure .about-caption {
+    font-size: 0.9rem;
+    color: var(--primary-highlight-color);
+    text-align: center;
+}
+
+.about-image.right {
+    max-width: 420px;
+    float: right;
+    margin: 1rem 0 1rem 2rem;
+}
+
+
+.tech-list,
+.links {
+    padding-left: 1.2rem;
+}
+
+.tech-list li,
+.links li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-image.right {
+        float: none;
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+}
