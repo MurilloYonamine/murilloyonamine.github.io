@@ -26,7 +26,7 @@
 }
 
 #theme-toggle-btn {
-    position: fixed;
+    position: fixed !important;
     top: 16px;
     left: 16px;
     background: none;
@@ -36,6 +36,7 @@
     padding: 0;
     margin: 0;
     z-index: 1000;
+    transform: none !important;
 }
 
 .logos-bar {
@@ -76,5 +77,28 @@
 
     .logo-link img {
         width: 48px;
+    }
+
+    /* On small screens, hide the fixed toggle and show it inside the nav */
+    #theme-toggle-btn {
+        display: none !important;
+    }
+
+    /* When the toggle is moved into the nav we wrap it in a list item */
+    #main-nav .nav-theme-toggle-item {
+        display: block;
+        padding: 12px 0;
+        list-style: none;
+        border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    #main-nav .nav-theme-toggle-item #theme-toggle-btn {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
     }
 }
