@@ -1,0 +1,51 @@
+/* Language toggle styles (separate file) */
+.icon-pt,
+.icon-en {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+#language-toggle-btn {
+    position: fixed !important;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    transform: none !important;
+}
+#language-toggle-btn img {
+    width: 36px !important;
+    height: 36px !important;
+    filter: invert(1) brightness(2) !important;
+}
+
+@media (max-width: 600px) {
+    /* Hide fixed language toggle on small screens; it will be moved into nav */
+    #language-toggle-btn {
+        display: none !important;
+    }
+
+    /* Language toggle when moved into the nav */
+    #main-nav .nav-language-toggle-item {
+        display: block;
+        padding: 12px 0;
+        list-style: none;
+        border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    #main-nav .nav-language-toggle-item #language-toggle-btn {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
