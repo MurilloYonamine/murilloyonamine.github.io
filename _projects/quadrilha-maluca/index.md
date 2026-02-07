@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Quadrilha Maluca"
-lang: pt
-permalink: /pt/projects/quadrilha-maluca/
+lang: pt-BR
+permalink: /br/projects/quadrilha-maluca/
 date: 2026-01-27
 contenttype: project
 tags: []

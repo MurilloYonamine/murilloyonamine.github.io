@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Um Passo de Cada Vez"
-lang: pt
-permalink: /pt/projects/um-passo-de-cada-vez/
+lang: pt-BR
+permalink: /br/projects/um-passo-de-cada-vez/
 date: 2025-01-27
 contenttype: project
 tags: [Unity, Game Jam, CTRL ALT Jam]

@@ -1,6 +1,6 @@
 ---
 layout: home
 title: "Murillo Portfolio"
-lang: pt-BR
-permalink: /br/
+lang: en
+permalink: /en/
 ---

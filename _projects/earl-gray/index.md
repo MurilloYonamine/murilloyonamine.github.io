@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Earl Gray"
-lang: pt
-permalink: /pt/projects/earl-gray/
+lang: pt-BR
+permalink: /br/projects/earl-gray/
 date: 2026-01-27
 contenttype: project
 tags: [Visual Novel, Downloadable]

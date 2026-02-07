@@ -1,8 +1,8 @@
-<button onclick="toggleLanguage()" id="language-toggle-btn" aria-label="Alternar idioma / Switch language">
-    <span class="icon-pt" style="vertical-align:middle;">
-        <img src="{{ '/assets/img/logos/brazil-flag.svg' | relative_url }}" alt="Português" width="24" height="24" aria-hidden="true">
-    </span>
-    <span class="icon-en" style="vertical-align:middle; display:none;">
-        <img src="{{ '/assets/img/logos/uk-flag.svg' | relative_url }}" alt="English" width="24" height="24" aria-hidden="true">
-    </span>
-</button>
+<div id="language-toggle-btn" class="lang-toggle" role="group" aria-label="Language switch">
+    <button class="lang-btn lang-btn-pt" aria-pressed="false" title="Português" onclick="selectLanguage('pt-BR')">
+        <img src="{{ '/assets/img/logos/brazil-flag.svg' | relative_url }}" alt="Português" width="36" height="36" aria-hidden="true">
+    </button>
+    <button class="lang-btn lang-btn-en" aria-pressed="false" title="English" onclick="selectLanguage('en')">
+        <img src="{{ '/assets/img/logos/uk-flag.svg' | relative_url }}" alt="English" width="36" height="36" aria-hidden="true">
+    </button>
+</div>

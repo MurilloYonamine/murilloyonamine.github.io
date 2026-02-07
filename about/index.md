@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Sobre
-lang: pt
-permalink: /pt/about/
+lang: pt-BR
+permalink: /br/about/
 ---
 
 <section class="about">

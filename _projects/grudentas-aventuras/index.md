@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Grudentas Aventuras"
-lang: pt
-permalink: /pt/projects/grudentas-aventuras/
+lang: pt-BR
+permalink: /br/projects/grudentas-aventuras/
 date: 2026-01-27
 contenttype: project
 tags: [Browser, Free, Adventure]

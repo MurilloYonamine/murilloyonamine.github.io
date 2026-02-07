@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=/br/">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+  <script>
+    (function(){
+      try {
+        var lang = localStorage.getItem('language') || (document.documentElement && document.documentElement.lang) || 'pt-BR';
+        if (typeof lang === 'string') {
+          var low = lang.toLowerCase();
+          if (low === 'pt' || low.indexOf('pt') === 0) lang = 'pt-BR';
+          else lang = 'en';
+        } else {
+          lang = 'pt-BR';
+        }
+        var target = (lang === 'en') ? '/en/' : '/br/';
+        var newUrl = target + window.location.search + window.location.hash;
+        if (window.location.pathname !== target) {
+          window.location.replace(newUrl);
+        }
+      } catch (e) {
+        // fallback handled by meta refresh
+      }
+    })();
+  </script>
+</head>
+<body>
+  Redirecting — <a href="/br/">Português</a> | <a href="/en/">English</a>
+</body>
+</html>

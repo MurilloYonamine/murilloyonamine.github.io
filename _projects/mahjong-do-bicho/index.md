@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Mahjong do Bicho"
-lang: pt
-permalink: /pt/projects/mahjong-do-bicho/
+lang: pt-BR
+permalink: /br/projects/mahjong-do-bicho/
 date: 2026-01-27
 contenttype: project
 tags: [Android, Mobile, Puzzle]

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "The Protector of Otherside Foot"
-lang: pt
-permalink: /pt/projects/the-protector-of-otherside-foot/
+lang: pt-BR
+permalink: /br/projects/the-protector-of-otherside-foot/
 date: 2024-04-23
 contenttype: project
 tags: [Game Maker, Action]
