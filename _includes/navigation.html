@@ -14,8 +14,7 @@
     {% assign about_link = 'about/' | relative_url %}
     <li class="{% if page.url == about_link or page.url contains about_link %}active{% endif %}"><a href="{{ about_link }}">About</a></li>
 
-    {% assign blog_link = 'blog/' | relative_url %}
-    <li class="{% if page.url == blog_link or page.url contains blog_link %}active{% endif %}"><a href="{{ blog_link }}">Blog</a></li>
+    <!-- Blog link removed -->
 
     {% assign projects_link = 'projects/' | relative_url %}
     <li class="{% if page.url == projects_link or page.url contains projects_link %}active{% endif %}"><a href="{{ projects_link }}">Projects</a></li>
