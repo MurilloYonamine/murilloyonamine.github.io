@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Soldiers On Saving"
+lang: en
+permalink: /en/projects/soldiers-on-saving/
 date: 2026-01-24
 contenttype: project
 tags: [Game Jam, Senac Jam, Unity]

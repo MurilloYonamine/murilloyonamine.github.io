@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Quadrilha Maluca"
-date: 2026-01-27
+title: "Um Passo de Cada Vez"
+lang: en
+permalink: /en/projects/um-passo-de-cada-vez/
+date: 2025-01-27
 contenttype: project
-tags: []
-image: https://img.itch.zone/aW1nLzE2NjM0Mjk2LnBuZw==/original/4gXanL.png
+tags: [Unity, Game Jam, CTRL ALT Jam]
+image: https://img.itch.zone/aW1nLzE2MjE2NDYwLmpwZw==/original/TDeCxs.jpg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ---
 
@@ -14,4 +16,4 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-<iframe frameborder="0" src="https://itch.io/embed/2786759?linkback=true" width="552" height="167"><a href="https://arii-mms.itch.io/quadrilha-maluca">Quadrilha Maluca by Ariel Moreira, Momodev, pederriiki, Nathalia Viana</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2717303?linkback=true&amp;border_width=0" width="550" height="165"><a href="https://murilloyonamine.itch.io/um-passo-de-cada-vez">Um Passo de Cada Vez</a></iframe>

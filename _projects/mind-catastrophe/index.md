@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Mind Catastrophe"
+lang: pt
+permalink: /pt/projects/mind-catastrophe/
 date: 2025-03-11
 contenttype: project
 tags: [Unity, Game Jam, CTRL ALT Jam]

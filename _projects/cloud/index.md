@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Cloud"
+lang: pt
+permalink: /pt/projects/cloud/
 date: 2026-01-27
 contenttype: project
 tags: [Windows, Downloadable, Puzzle]

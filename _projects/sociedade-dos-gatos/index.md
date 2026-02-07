@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Sociedade dos Gatos"
+lang: pt
+permalink: /pt/projects/sociedade-dos-gatos/
 date: 2026-01-27
 contenttype: project
 tags: [Downloadable, Physical, Strategy]

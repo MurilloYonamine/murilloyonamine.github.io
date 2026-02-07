@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Taxi Days"
+lang: en
+permalink: /en/projects/taxi-days/
 date: 2026-01-27
 contenttype: project
 tags: [Windows, Visual Novel, Downloadable]

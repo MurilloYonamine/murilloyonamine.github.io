@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "The Protector of Otherside Foot"
-date: 2024-04-23
+title: "Um Passo de Cada Vez"
+lang: pt
+permalink: /pt/projects/um-passo-de-cada-vez/
+date: 2025-01-27
 contenttype: project
-tags: [Game Maker, Action]
-image: https://img.itch.zone/aW1nLzIxMzMxMjQ1LnBuZw==/original/G0oDEX.png
+tags: [Unity, Game Jam, CTRL ALT Jam]
+image: https://img.itch.zone/aW1nLzE2MjE2NDYwLmpwZw==/original/TDeCxs.jpg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ---
-
-![The Protector of Otherside Foot](https://img.itch.zone/aW1nLzIxMzMxMjQ1LnBuZw==/original/G0oDEX.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -16,4 +16,4 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-<iframe frameborder="0" src="https://itch.io/embed/2664225?linkback=true" width="552" height="167"></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2717303?linkback=true&amp;border_width=0" width="550" height="165"><a href="https://murilloyonamine.itch.io/um-passo-de-cada-vez">Um Passo de Cada Vez</a></iframe>

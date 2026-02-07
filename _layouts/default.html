@@ -15,9 +15,11 @@
   <link rel="dns-prefetch" href="www.googletagmanager.com">
   <link rel="dns-prefetch" href="www.google-analytics.com">
   <script defer src="{{ '/assets/js/toggleTheme.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/toggleLanguage.js' | relative_url }}"></script>
   {% include analytics.html %}
 </head>
 <body{% if page.pagetype=='blog' %} class="blog" {% endif %}>
+  {% include language-toggle.html %}
   {% include theme-toggle.html %}
   {{ content }}
   </body>
