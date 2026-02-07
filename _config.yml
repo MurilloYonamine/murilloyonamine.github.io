@@ -10,23 +10,14 @@ description: "Site migrado para Jekyll 4.x"
 author_name: "Murillo"
 resume_url: "/assets/files/resume.pdf"
 future: true
-permalink: /blog/:year/:month/:day/:title/
-
 # Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate-v2
   - jekyll-minifier
   - jemoji
 
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: /blog/page/:num/
-
-  
 # Collections
 collections:
   projects:

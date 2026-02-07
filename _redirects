@@ -1,0 +1,2 @@
+# Redirect all old blog URLs to homepage
+/blog/* / 301
