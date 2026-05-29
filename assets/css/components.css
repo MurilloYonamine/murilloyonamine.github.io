@@ -37,6 +37,7 @@
     margin: 0;
     z-index: 1000;
     transform: none !important;
+    color: inherit;
 }
 
 #theme-toggle-btn svg {
@@ -44,6 +45,10 @@
     height: 36px !important;
     stroke: currentColor !important;
     transition: stroke 160ms ease;
+}
+
+.dark-mode #theme-toggle-btn svg {
+    stroke: #fff !important;
 }
 
 #theme-toggle-btn img {
