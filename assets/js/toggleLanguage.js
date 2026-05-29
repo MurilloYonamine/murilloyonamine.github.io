@@ -74,12 +74,8 @@ function redirectToEquivalent(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const saved = localStorage.getItem('language');
-  if (saved === 'en') {
-    document.documentElement.lang = 'en';
-  } else if (saved === 'pt' || saved === 'pt-BR') {
-    document.documentElement.lang = 'pt-BR';
-  }
+  const currentLang = document.documentElement.lang || 'pt-BR';
+  localStorage.setItem('language', currentLang);
   updateLanguageIcon();
 
   // Navigation toggle for mobile movement

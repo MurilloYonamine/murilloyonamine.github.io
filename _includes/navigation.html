@@ -8,18 +8,32 @@
   </button>
 
   <ul id="main-nav">
-    {% assign home_link = '/' | relative_url %}
-    <li class="{% if page.url == home_link %}active{% endif %}"><a href="{{ home_link }}">Home</a></li>
+    {% if page.lang == 'en' %}
+      {% assign lang_prefix = '/en/' %}
+      {% assign home_title = 'Home' %}
+      {% assign about_title = 'About' %}
+      {% assign projects_title = 'Projects' %}
+      {% assign resume_title = 'Resume' %}
+    {% else %}
+      {% assign lang_prefix = '/br/' %}
+      {% assign home_title = 'Início' %}
+      {% assign about_title = 'Sobre' %}
+      {% assign projects_title = 'Projetos' %}
+      {% assign resume_title = 'Currículo' %}
+    {% endif %}
 
-    {% assign about_link = 'about/' | relative_url %}
-    <li class="{% if page.url == about_link or page.url contains about_link %}active{% endif %}"><a href="{{ about_link }}">About</a></li>
+    {% assign home_link = lang_prefix | relative_url %}
+    <li class="{% if page.url == home_link %}active{% endif %}"><a href="{{ home_link }}">{{ home_title }}</a></li>
+
+    {% assign about_link = lang_prefix | append: 'about/' | relative_url %}
+    <li class="{% if page.url == about_link or page.url contains '/about/' %}active{% endif %}"><a href="{{ about_link }}">{{ about_title }}</a></li>
 
     <!-- Blog link removed -->
 
-    {% assign projects_link = 'projects/' | relative_url %}
-    <li class="{% if page.url == projects_link or page.url contains projects_link %}active{% endif %}"><a href="{{ projects_link }}">Projects</a></li>
+    {% assign projects_link = lang_prefix | append: 'projects/' | relative_url %}
+    <li class="{% if page.url == projects_link or page.url contains '/projects/' %}active{% endif %}"><a href="{{ projects_link }}">{{ projects_title }}</a></li>
 
     {% assign resume_link = site.resume_url | relative_url %}
-    <li class="{% if page.url == resume_link or page.url contains resume_link %}active{% endif %}"><a href="{{ resume_link }}">Resume</a></li>
+    <li class="{% if page.url == resume_link or page.url contains resume_link %}active{% endif %}"><a href="{{ resume_link }}">{{ resume_title }}</a></li>
   </ul>
 </div>

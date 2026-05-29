@@ -1,25 +1,35 @@
 ---
-layout: page
-title: Sobre
+layout: null
 permalink: /about/
 ---
-
-<section class="about">
-  <p>
-    Hi, I’m <strong>Murillo Gomes Yonamine</strong>, a <strong>Game Development student</strong> at Centro Universitário Senac
-    and a <strong>game development intern</strong> focused on gameplay programming.
-    I mainly work with <strong>Unity (C#)</strong>, and I also have experience with
-    <strong>Godot, Unreal Engine</strong>, and <strong>GameMaker</strong>.
-  </p>
-
-  <figure class="about-figure">
-  permalink: /about/
-		src="/assets/img/about/interview.gif" 
-
-  ---
-  layout: page
-  title: About (redirect)
-  permalink: /about/
-  ---
-
-  <script>location.replace('/pt/about/');</script>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=/br/about/">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+  <script>
+    (function(){
+      try {
+        var lang = localStorage.getItem('language') || (document.documentElement && document.documentElement.lang) || 'pt-BR';
+        if (typeof lang === 'string') {
+          var low = lang.toLowerCase();
+          if (low === 'pt' || low.indexOf('pt') === 0) lang = 'pt-BR';
+          else lang = 'en';
+        } else {
+          lang = 'pt-BR';
+        }
+        var target = (lang === 'en') ? '/en/about/' : '/br/about/';
+        var newUrl = target + window.location.search + window.location.hash;
+        window.location.replace(newUrl);
+      } catch (e) {
+        window.location.replace('/br/about/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  Redirecting — <a href="/br/about/">Português</a> | <a href="/en/about/">English</a>
+</body>
+</html>
