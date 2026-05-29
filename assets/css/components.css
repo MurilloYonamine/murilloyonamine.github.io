@@ -42,14 +42,19 @@
 #theme-toggle-btn svg {
     width: 36px !important;
     height: 36px !important;
-    stroke: #fff !important;
-    filter: invert(1) brightness(2) !important;
+    stroke: currentColor !important;
+    transition: stroke 160ms ease;
 }
 
 #theme-toggle-btn img {
     width: 36px !important;
     height: 36px !important;
-    filter: invert(1) brightness(2) !important;
+    filter: none;
+    transition: filter 160ms ease;
+}
+
+.dark-mode #theme-toggle-btn img {
+    filter: invert(1) !important;
 }
 
 .logos-bar {

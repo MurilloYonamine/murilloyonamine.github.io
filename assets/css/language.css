@@ -27,7 +27,12 @@
 .lang-toggle .lang-btn img {
     width: 36px !important;
     height: 36px !important;
-    filter: none !important;
+    filter: none;
+    transition: filter 160ms ease;
+}
+
+.dark-mode .lang-toggle .lang-btn img {
+    filter: invert(1) !important;
 }
 .lang-toggle .lang-btn.active { opacity: 1; transform: scale(1); }
 .lang-toggle .lang-btn.inactive { opacity: 0.32; transform: scale(0.96); }
