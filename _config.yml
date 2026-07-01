@@ -5,8 +5,8 @@ disqus:
 
 baseurl: ""
 url: "https://murilloyonamine.github.io"
-title: "Novo Portfolio Jekyll 4"
-description: "Site migrado para Jekyll 4.x"
+title: "Murillo Gomes Yonamine — Portfólio"
+description: "Portfólio pessoal de Murillo Gomes Yonamine, estudante de Desenvolvimento de Jogos e programador de gameplay."
 author_name: "Murillo"
 resume_url: "/assets/files/resume.pdf"
 future: true

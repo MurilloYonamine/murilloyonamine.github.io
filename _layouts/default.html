@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="dns-prefetch" href="https://{{ site.disqus.shortname }}.disqus.com">
-  <meta itemprop="description" name="description"
-    content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
-  <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% seo %}
   <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
