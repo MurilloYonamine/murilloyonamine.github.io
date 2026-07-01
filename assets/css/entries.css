@@ -12,7 +12,7 @@
     display: flex;
     gap: 30px;
     align-items: flex-start;
-    border: 2px dashed currentColor; /* Usando currentColor para herdar a cor do tema */
+    border: 2px dashed currentColor; 
     padding: 24px;
     position: relative;
     margin-bottom: 35px;
@@ -24,7 +24,7 @@
     position: absolute;
     top: -14px;
     left: 20px;
-    background: var(--primary-background-color); /* branco no light mode */
+    background: var(--primary-background-color); 
     padding: 0 10px;
     font-family: "Courier New", Courier, monospace;
     font-size: 11px;
@@ -35,30 +35,39 @@
     z-index: 10;
 }
 
-/* Ajuste do badge para o Dark Mode */
 body.dark-mode .entry-badge {
     background: var(--primary-text-color) !important; /* preto no dark mode */
     color: var(--primary-background-color) !important; /* branco no dark mode */
 }
 
 .entry-thumb {
-    flex: 0 0 240px;
-    width: 240px;
+    flex: 0 0 320px;
+    width: 320px;
+    height: 183px; 
     border: 2px solid currentColor;
     padding: 4px;
-    background: transparent; /* transparente para evitar bloco branco no escuro */
+    background: transparent; 
     overflow: hidden;
 }
 
-.entry-thumb a,
-.entry-thumb img {
+.entry-thumb a {
     display: block;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .entry-thumb img {
-    height: 150px;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transform: scale(1.02); 
+    transition: transform 0.2s ease;
+}
+
+.entry-thumb:hover img {
+    transform: scale(1.10); 
 }
 
 .entry-content {
@@ -85,7 +94,7 @@ body.dark-mode .entry-badge {
 
 .entry-specs td {
     padding: 6px 0;
-    border-bottom: 1px dotted currentColor; /* Dotted em currentColor */
+    border-bottom: 1px dotted currentColor; 
     font-size: 14px;
     color: inherit;
 }
@@ -102,7 +111,7 @@ body.dark-mode .entry-badge {
 
 .entry-tag {
     display: inline-block;
-    border: 1px solid currentColor !important; /* Força todas as 4 bordas a usarem a mesma cor */
+    border: 1px solid currentColor !important; 
     padding: 2px 8px;
     font-size: 12px;
     margin-right: 8px;
@@ -112,7 +121,6 @@ body.dark-mode .entry-badge {
     transition: all 0.1s ease;
 }
 
-/* Ajuste das tags para o Dark Mode (evitar texto branco em fundo branco) */
 body.dark-mode .entry-tag {
     background-color: rgba(255, 255, 255, 0.08) !important;
     color: var(--primary-background-color) !important;
@@ -171,7 +179,6 @@ body.dark-mode .actions-bar a:hover {
     }
 }
 
-/* Lista de Tags do Topo da Página (Filtros) */
 .entries-tags-wrap {
     margin: 12px 0 24px 0;
     border-bottom: 2px solid currentColor;

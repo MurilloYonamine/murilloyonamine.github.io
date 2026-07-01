@@ -1,7 +1,7 @@
 :root {
-    --primary-background-color: white;
-    --primary-text-color: #222;
-    --primary-highlight-color: #eeeeee;
+    --primary-background-color: #f4f0e6; /* Bege quente estilo papel retro-tech, muito confortável para leitura */
+    --primary-text-color: #222222;       /* Grafite escuro para suavizar o contraste */
+    --primary-highlight-color: #eae5d8;  /* Destaque bege ligeiramente mais escuro para botões e tags */
 }
 
 html,

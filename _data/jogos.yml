@@ -1,0 +1,214 @@
+- id: comigo-miau-pode
+  title: "Comigo Miau Pode!"
+  date: "2026-06-16"
+  image: "https://img.itch.zone/aW1nLzI3OTQ1MjU4LnBuZw==/original/NySgvt.png"
+  tags: [Unity, Game Jam, Senac Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/comigo-miau-pode"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo Gomes Yonamine, MeekYeen, harumi, Mitsuo"
+  duration_pt: "4 dias"
+  duration_en: "4 days"
+
+- id: blender-crashing
+  title: "Blender Crashing"
+  date: "2025-12-05"
+  image: "https://img.itch.zone/aW1nLzI2MjA5ODY3LnBuZw==/315x250%23c/mOMDuB.png"
+  tags: [Unity, Game Jam, Senac Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/blender-crashing"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Dans, Fernando Zatta, Pedro Alves"
+  duration_pt: "4 dias"
+  duration_en: "4 days"
+
+- id: cloud
+  title: "Cloud"
+  date: "2024-12-24"
+  image: "https://img.itch.zone/aW1nLzE5NTI5MTEzLnBuZw==/315x250%23c/jfZ%2Fh9.png"
+  tags: [Unity, Game Jam, Senac Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/cloud"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, pederriiki, Aline, Arajau"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: earl-gray
+  title: "Earl Gray"
+  date: "2024-06-06"
+  image: "https://img.itch.zone/aW1hZ2UvMjc1NzE3Ny8xNjgzOTIzMi5qcGc=/original/%2BlLsH3.jpg"
+  tags: [Visual Novel, Unity, University Project]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/earl-gray"
+  role_pt: "Programador de Gameplay e Tools"
+  role_en: "Gameplay and Tools Programmer"
+  team: "Murillo, Pr3ssContinu3"
+  duration_pt: "3 dias"
+  duration_en: "3 days"
+
+- id: grudentas-aventuras
+  title: "Grudentas Aventuras"
+  date: "2025-05-27"
+  image: "https://img.itch.zone/aW1nLzIxNjcwMTQwLnBuZw==/original/h1QxQF.png"
+  tags: [Unity, University Project]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/grudentas-aventuras"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Thales, Bruno, jprvivasGS"
+  duration_pt: "1 Semestre"
+  duration_en: "1 Semester"
+
+- id: light-out
+  title: "Light Out"
+  date: "2025-09-23"
+  image: "https://img.itch.zone/aW1nLzE3ODk1Mzk0LnBuZw==/original/j13jmv.png"
+  tags: [Unity, Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://leithtetij.itch.io/light-out"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Thalita Leite, Rafitchass, Paulomques, Fellipe Freitas, Zanetros, João Gianelli"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: mahjong-do-bicho
+  title: "Mahjong do Bicho"
+  date: "2025-10-20"
+  image: "https://img.itch.zone/aW1hZ2UvMzk3NDAwOS8yNDU4OTA0MC5qcGc=/original/yaQw2M.jpg"
+  tags: [Unity, Android, Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/mahjong-do-bicho"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Pr3ssContinu3"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: mind-catastrophe
+  title: "Mind Catastrophe"
+  date: "2024-07-28"
+  image: "https://img.itch.zone/aW1nLzE3MTA5MDY1LnBuZw==/original/4WjNE6.png"
+  tags: [Unity, Game Jam, CTRL ALT Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/mind-catastrophe"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Rarellu, Lucas Machado, Rickzinho, Jouh, Lucas Tristão"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: quadrilha-maluca
+  title: "Quadrilha Maluca"
+  date: "2024-06-21"
+  image: "https://img.itch.zone/aW1nLzE2NjM0Mjk2LnBuZw==/original/4gXanL.png"
+  tags: [Unity, Game Jam, Senac Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://arii-mms.itch.io/quadrilha-maluca"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Ariel Moreira, pederriiki, Nathalia Viana"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: sociedade-dos-gatos
+  title: "Sociedade dos Gatos"
+  date: "2024-06-04"
+  image: "https://img.itch.zone/aW1hZ2UvMjc1MTA5MS8xNjQxNTgyNC5qcGVn/original/L3LeLR.jpeg"
+  tags: [Boarding Game, University Project]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/sociedade-dos-gatos"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Hyonnie, BarefootLotus48, pepitaBR"
+  duration_pt: "1 semestre"
+  duration_en: "1 semester"
+
+- id: soldiers-on-saving
+  title: "Soldiers On Saving"
+  date: "2025-07-04"
+  image: "https://img.itch.zone/aW1nLzIyNDA4NjAxLnBuZw==/original/LvEuVx.png"
+  tags: [Unity, Game Jam, Senac Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/soldiers-on-saving"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Gustavo, Aline, pederriiki"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: taxi-days
+  title: "Taxi Days"
+  date: "2024-11-08"
+  image: "https://img.itch.zone/aW1hZ2UvMzA5NTU5OS8xODg2MTkzOS5qcGVn/original/2hmHhn.jpeg"
+  tags: [Unity, Visual Novel, University Project]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/taxi-days"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo"
+  duration_pt: "1 semestre"
+  duration_en: "1 semester"
+
+- id: um-passo-de-cada-vez
+  title: "Um Passo de Cada Vez"
+  date: "2024-05-19"
+  image: "https://img.itch.zone/aW1nLzE2MjE2NDYwLmpwZw==/original/TDeCxs.jpg"
+  tags: [Unity, Game Jam, CTRL ALT Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/um-passo-de-cada-vez"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Pr3ssContinu3"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: the-protector-of-otherside-foot
+  title: "The Protector of Otherside Foot"
+  date: "2024-04-23"
+  image: "https://img.itch.zone/aW1nLzIxMzMxMjQ1LnBuZw==/original/G0oDEX.png"
+  tags: [Game Maker, Game Jam]
+  engine: "Game Maker (GML)"
+  itch_url: "https://murilloyonamine.itch.io/the-protector-of-otherside-foot"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, jprvivasGS, FelipeSemAcento, Blur"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
+- id: chess-of-mana
+  title: "Chess of Mana"
+  date: "2026-02-25"
+  image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3778350/d4d39fbb53ecc33039410c8a4769593bca36d1e0/capsule_616x353.jpg"
+  tags: [Unity, Steam, Internship]
+  engine: "Unity (C#)"
+  steam_url: "https://store.steampowered.com/app/3778350/Chess_of_Mana/"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Monk Monkey & Marble Game Studio"
+
+- id: ghetto-zombies-graffiti-squad
+  title: "Ghetto Zombies: Graffiti Squad"
+  date: "2026-01-16"
+  image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3047820/5de2e916ce2d0c16587bef446d8aec02f6081388/capsule_616x353.jpg"
+  tags: [Game Maker, Steam, Xbox, Internship]
+  engine: "Game Maker (GML)"
+  steam_url: "https://store.steampowered.com/app/3047820/Ghetto_Zombies_Graffiti_Squad/"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Monk Monkey & Marble Game Studio"
+
+- id: deskdragora
+  title: "Deskdragora"
+  date: "2026-07-14"
+  image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633760/97a04336e47f240165627861a3462aaeba65e730/capsule_616x353.jpg"
+  tags: [Unity, Steam, Internship]
+  engine: "Unity (C#)"
+  steam_url: "https://store.steampowered.com/app/4633760/Deskdragora/"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Monk Monkey & Marble Game Studio"

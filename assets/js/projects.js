@@ -20,6 +20,34 @@ document.addEventListener('DOMContentLoaded', function() {
           item.style.display = 'none';
         }
       });
+
+      // Atualiza os parâmetros de consulta da URL (query params) para persistência
+      try {
+        var url = new URL(window.location.href);
+        if (!t || t === 'all') {
+          url.searchParams.delete('tag');
+        } else {
+          url.searchParams.set('tag', t);
+        }
+        window.history.replaceState({}, '', url.toString());
+      } catch (e) {
+        console.error('Erro ao atualizar URL de tags:', e);
+      }
+
+      // Recalcula a numeração sequencial dos projetos visíveis de forma decrescente (mais antigo = 01)
+      var visibleEntries = entries.filter(function (item) {
+        return item.style.display !== 'none';
+      });
+      var totalVisible = visibleEntries.length;
+      visibleEntries.forEach(function (item, index) {
+        var displayNum = totalVisible - index;
+        var paddedNum = ('0' + displayNum).slice(-2);
+        var badge = item.querySelector('.entry-badge');
+        if (badge) {
+          badge.textContent = 'PROJETO_' + paddedNum + '.EXE';
+        }
+      });
+
       document.querySelectorAll('.entries-tags a, .entry-tag').forEach(function (a) { a.classList.remove('active'); });
       if (t && t !== 'all') {
         document.querySelectorAll('[data-tag="' + t + '"]').forEach(function (a) { a.classList.add('active'); });
