@@ -3,19 +3,50 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .entry-item {
     display: flex;
-    gap: 24px;
+    gap: 30px;
     align-items: flex-start;
-    margin-bottom: 25px;
+    border: 2px dashed currentColor; /* Usando currentColor para herdar a cor do tema */
+    padding: 24px;
+    position: relative;
+    margin-bottom: 35px;
+    color: inherit;
+}
+
+/* Indicador do executável clássico */
+.entry-badge {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: var(--primary-background-color); /* branco no light mode */
+    padding: 0 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid currentColor;
+    text-transform: uppercase;
+    color: var(--primary-text-color) !important;
+    z-index: 10;
+}
+
+/* Ajuste do badge para o Dark Mode */
+body.dark-mode .entry-badge {
+    background: var(--primary-text-color) !important; /* preto no dark mode */
+    color: var(--primary-background-color) !important; /* branco no dark mode */
 }
 
 .entry-thumb {
-    flex: 0 0 220px;
-    width: 220px;
-    height: 140px;
+    flex: 0 0 240px;
+    width: 240px;
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent; /* transparente para evitar bloco branco no escuro */
     overflow: hidden;
 }
 
@@ -23,121 +54,157 @@
 .entry-thumb img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 
 .entry-thumb img {
+    height: 150px;
     object-fit: cover;
 }
 
 .entry-content {
-    flex: 1 1 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .entry-title {
-    margin: 0 0 8px 0;
-    font-size: 1.6rem;
+    margin: 0 0 12px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: inherit;
 }
 
-.entry-excerpt {
-    margin: 0;
-    color: #444;
+/* Tabela de especificações estilo ASCII / Ficha Técnica */
+.entry-specs {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.entries-tags-wrap {
-    margin: 12px 0 18px 0;
+.entry-specs td {
+    padding: 6px 0;
+    border-bottom: 1px dotted currentColor; /* Dotted em currentColor */
+    font-size: 14px;
+    color: inherit;
+}
+
+.entry-specs td.label {
+    font-weight: bold;
+    width: 120px;
+    text-transform: uppercase;
+}
+
+.entry-tags {
+    margin-bottom: 20px;
+}
+
+.entry-tag {
+    display: inline-block;
+    border: 1px solid currentColor !important; /* Força todas as 4 bordas a usarem a mesma cor */
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-right: 8px;
+    background-color: var(--primary-highlight-color) !important;
+    text-decoration: none;
+    color: inherit !important;
+    transition: all 0.1s ease;
+}
+
+/* Ajuste das tags para o Dark Mode (evitar texto branco em fundo branco) */
+body.dark-mode .entry-tag {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: var(--primary-background-color) !important;
+    border: 1px solid currentColor !important;
+}
+
+.entry-tag:hover {
+    background-color: var(--primary-text-color) !important;
+    color: var(--primary-background-color) !important;
+}
+
+body.dark-mode .entry-tag:hover {
+    background-color: var(--primary-background-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+.actions-bar {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.actions-bar a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
     border-bottom: 2px solid currentColor;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
+    transition: all 0.1s ease;
+    font-size: 14px;
+}
+
+.actions-bar a:hover {
+    background-color: var(--primary-text-color) !important;
+    color: var(--primary-background-color) !important;
+}
+
+body.dark-mode .actions-bar a:hover {
+    background-color: var(--primary-background-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+@media (max-width: 700px) {
+    .entry-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .entry-thumb {
+        width: 100%;
+        flex: none;
+    }
+    
+    .entry-thumb img {
+        height: auto;
+    }
+}
+
+/* Lista de Tags do Topo da Página (Filtros) */
+.entries-tags-wrap {
+    margin: 12px 0 24px 0;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 12px;
 }
 
 .entries-tags {
     list-style: none;
     padding: 0;
-    margin: 6px 0 0 0;
+    margin: 8px 0 0 0;
     display: inline-block;
 }
 
 .entries-tags li {
     display: inline-block;
     margin-right: 16px;
+    margin-bottom: 8px;
 }
 
 .entries-tags a {
     color: inherit;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .entries-tags a:hover {
     border-bottom-color: currentColor;
 }
 
-.entries-tags a.active,
-.entry-tag.active {
+.entries-tags a.active {
     font-weight: 700;
     border-bottom-color: currentColor;
-}
-
-@media (max-width: 700px) {
-    .entries-tags {
-        display: block;
-    }
-
-    .entries-tags li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-}
-
-.entry-meta {
-    margin-bottom: 8px;
-    color: #666;
-    font-size: 0.95rem;
-}
-
-.entry-date {
-    display: inline-block;
-    margin-right: 12px;
-    color: #999;
-}
-
-.entry-tags {
-    display: inline-block;
-}
-
-.entry-tag {
-    display: inline;
-    background: transparent;
-    color: inherit;
-    padding: 0;
-    border-radius: 0;
-    font-size: 0.95rem;
-    text-decoration: none;
-    margin-right: 12px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 120ms ease-in-out, color 120ms ease-in-out;
-}
-
-.entry-tag:hover {
-    background: transparent;
-    border-bottom-color: currentColor;
-}
-
-@media (max-width: 700px) {
-    .entry-item {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .entry-thumb {
-        width: 100%;
-        height: auto;
-        flex: none;
-    }
-
-    .entry-thumb a,
-    .entry-thumb img {
-        width: 100%;
-        height: auto;
-    }
 }

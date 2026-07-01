@@ -8,6 +8,11 @@ contenttype: project
 tags: [Unity, Game Jam, CTRL ALT Jam]
 image: https://img.itch.zone/aW1nLzE2MjE2NDYwLmpwZw==/original/TDeCxs.jpg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/um-passo-de-cada-vez"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

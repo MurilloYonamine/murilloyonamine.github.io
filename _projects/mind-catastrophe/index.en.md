@@ -8,6 +8,11 @@ contenttype: project
 tags: [Unity, Game Jam, CTRL ALT Jam]
 image: https://img.itch.zone/aW1nLzE3MTA5MDY1LnBuZw==/original/4WjNE6.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/mind-catastrophe"
 ---
 
 ![Mind Catastrophe](https://img.itch.zone/aW1nLzE3MTA5MDY1LnBuZw==/original/4WjNE6.png)

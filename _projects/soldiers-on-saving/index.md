@@ -8,6 +8,11 @@ contenttype: project
 tags: [Game Jam, Senac Jam, Unity]
 image: https://img.itch.zone/aW1nLzIyNDA4NjAxLnBuZw==/original/LvEuVx.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/soldiers-on-saving"
 ---
 
 ![Soldiers On Saving](https://img.itch.zone/aW1nLzIyNDA4NjAxLnBuZw==/original/LvEuVx.png)

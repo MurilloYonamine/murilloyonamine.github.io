@@ -8,6 +8,10 @@ contenttype: project
 tags: [Game Maker, Action]
 image: https://img.itch.zone/aW1nLzIxMzMxMjQ1LnBuZw==/original/G0oDEX.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
 ---
 
 ![The Protector of Otherside Foot](https://img.itch.zone/aW1nLzIxMzMxMjQ1LnBuZw==/original/G0oDEX.png)

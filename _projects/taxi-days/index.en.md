@@ -8,6 +8,11 @@ contenttype: project
 tags: [Windows, Visual Novel, Downloadable]
 image: https://img.itch.zone/aW1hZ2UvMzA5NTU5OS8xODg2MTkzOS5qcGVn/original/2hmHhn.jpeg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/taxi-days"
 ---
 
 ![Taxi Days](https://img.itch.zone/aW1hZ2UvMzA5NTU5OS8xODg2MTkzOS5qcGVn/original/2hmHhn.jpeg)

@@ -8,6 +8,11 @@ contenttype: project
 tags: [Downloadable, Physical, Strategy]
 image: https://img.itch.zone/aW1hZ2UvMjc1MTA5MS8xNjQxNTgyNC5qcGVn/original/L3LeLR.jpeg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/sociedade-dos-gatos"
 ---
 
 ![Sociedade dos Gatos](https://img.itch.zone/aW1hZ2UvMjc1MTA5MS8xNjQxNTgyNC5qcGVn/original/L3LeLR.jpeg)

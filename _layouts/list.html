@@ -41,28 +41,67 @@ layout: description
     {% for post in posts_collection %}
     {% if post.contenttype == project and post.lang == page.lang %}
     <li class="entry-item" data-tags="{{ post.tags | join:',' | downcase }}">
+        <div class="entry-badge">PROJETO_{{ forloop.index | prepend: '0' | slice: -2, 2 }}.EXE</div>
+        
         {% if post.image %}
         <div class="entry-thumb">
-            <a href="{{ post.url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}"></a>
+            <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}"></a>
         </div>
         {% endif %}
 
         <div class="entry-content">
-            <h2 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <div class="entry-meta">
-                {% if post.date %}
-                <small class="entry-date">{{ post.date | date: "%e %b %Y" }}</small>
-                {% endif %}
+            <div>
+                <h2 class="entry-title">{{ post.title }}</h2>
                 {% if post.tags %}
                 <div class="entry-tags">
                     {% for tag in post.tags %}
-                    <a class="entry-tag" href="#" data-tag="{{ tag | downcase }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+                    <a class="entry-tag" href="#" data-tag="{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                 </div>
                 {% endif %}
+
+                <table class="entry-specs">
+                  {% if post.engine %}
+                  <tr>
+                    <td class="label">{% if page.lang == 'en' %}ENGINE:{% else %}ENGINE:{% endif %}</td>
+                    <td>{{ post.engine }}</td>
+                  </tr>
+                  {% endif %}
+                  
+                  {% if post.role %}
+                  <tr>
+                    <td class="label">{% if page.lang == 'en' %}ROLE:{% else %}FUNÇÃO:{% endif %}</td>
+                    <td>{{ post.role }}</td>
+                  </tr>
+                  {% endif %}
+                  
+                  {% if post.team %}
+                  <tr>
+                    <td class="label">{% if page.lang == 'en' %}TEAM:{% else %}EQUIPE:{% endif %}</td>
+                    <td>{{ post.team }}</td>
+                  </tr>
+                  {% endif %}
+                  
+                  {% if post.duration %}
+                  <tr>
+                    <td class="label">{% if page.lang == 'en' %}DURATION:{% else %}DURAÇÃO:{% endif %}</td>
+                    <td>{{ post.duration }}</td>
+                  </tr>
+                  {% endif %}
+                </table>
             </div>
 
-            <p class="entry-excerpt">{{ post.excerpt | strip_html | truncate: 300 }}</p>
+            <div class="actions-bar">
+                {% if post.itch_url %}
+                <a href="{{ post.itch_url }}" target="_blank">{% if page.lang == 'en' %}PLAY ON ITCH.IO{% else %}JOGAR NO ITCH.IO{% endif %}</a>
+                {% endif %}
+                
+                {% if post.github_url %}
+                <a href="{{ post.github_url }}" target="_blank">{% if page.lang == 'en' %}SOURCE CODE{% else %}CÓDIGO FONTE{% endif %}</a>
+                {% endif %}
+                
+                <a href="{{ post.url | relative_url }}">{% if page.lang == 'en' %}DETAILS{% else %}DETALHES{% endif %}</a>
+            </div>
         </div>
     </li>
     {% endif %}

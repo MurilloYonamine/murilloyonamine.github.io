@@ -8,6 +8,11 @@ contenttype: project
 tags: [Visual Novel, Downloadable]
 image: https://img.itch.zone/aW1hZ2UvMjc1NzE3Ny8xNjgzOTIzMi5qcGc=/original/%2BlLsH3.jpg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Godot (GDScript)"
+role: "Sistemas & UI"
+team: "2 integrantes"
+duration: "1 semana"
+itch_url: "https://murilloyonamine.itch.io/earl-gray"
 ---
 
 ![Earl Gray](https://img.itch.zone/aW1hZ2UvMjc1NzE3Ny8xNjgzOTIzMi5qcGc=/original/%2BlLsH3.jpg)

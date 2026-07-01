@@ -8,6 +8,11 @@ contenttype: project
 tags: []
 image: https://img.itch.zone/aW1nLzE2NjM0Mjk2LnBuZw==/original/4gXanL.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://arii-mms.itch.io/quadrilha-maluca"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

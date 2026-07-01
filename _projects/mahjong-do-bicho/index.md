@@ -8,6 +8,11 @@ contenttype: project
 tags: [Android, Mobile, Puzzle]
 image: https://img.itch.zone/aW1hZ2UvMzk3NDAwOS8yNDU4OTA0MC5qcGc=/original/yaQw2M.jpg
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "Game Jam"
+duration: "48h"
+itch_url: "https://murilloyonamine.itch.io/mahjong-do-bicho"
 ---
 
 ![Mahjong do Bicho](https://img.itch.zone/aW1hZ2UvMzk3NDAwOS8yNDU4OTA0MC5qcGc=/original/yaQw2M.jpg)

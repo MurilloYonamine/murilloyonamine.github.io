@@ -8,6 +8,11 @@ contenttype: project
 tags: [Browser, Free, Adventure]
 image: https://img.itch.zone/aW1nLzIxNjcwMTQwLnBuZw==/original/h1QxQF.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "3 members"
+duration: "48 hours"
+itch_url: "https://murilloyonamine.itch.io/grudentas-aventuras"
 ---
 
 ![Grudentas Aventuras](https://img.itch.zone/aW1nLzIxNjcwMTQwLnBuZw==/original/h1QxQF.png)

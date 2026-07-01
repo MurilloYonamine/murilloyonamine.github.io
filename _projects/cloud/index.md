@@ -8,6 +8,11 @@ contenttype: project
 tags: [Windows, Downloadable, Puzzle]
 image: https://img.itch.zone/aW1nLzE5NTI5MTEzLnBuZw==/315x250%23c/jfZ%2Fh9.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+engine: "Unity (C#)"
+role: "Gameplay Programmer"
+team: "4 integrantes"
+duration: "48 horas (GGJ)"
+itch_url: "https://murilloyonamine.itch.io/cloud"
 ---
 
 ![Cloud](https://img.itch.zone/aW1hZ2UvMzIwMjE1OC8xOTUyODg0NC5qcGVn/original/f18nZT.jpeg)
