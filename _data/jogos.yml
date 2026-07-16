@@ -1,3 +1,16 @@
+- id: futebas
+  title: "Futebas!"
+  date: "2026-07-12"
+  image: "https://img.itch.zone/aW1nLzI4NDMzMjA3LnBuZw==/original/hwWDpO.png"
+  tags: [Unity, Game Jam, Scienza Game Jam]
+  engine: "Unity (C#)"
+  itch_url: "https://murilloyonamine.itch.io/futebas"
+  role_pt: "Programador de Gameplay"
+  role_en: "Gameplay Programmer"
+  team: "Murillo, Marcos Vinicius Cardoso, Ellen Rubinelli Sprocati, Rafael Fragozo Vieira, Thalita de Barros Leite"
+  duration_pt: "1 semana"
+  duration_en: "1 week"
+
 - id: comigo-miau-pode
   title: "Comigo Miau Pode!"
   date: "2026-06-16"
@@ -17,7 +30,7 @@
   image: "https://img.itch.zone/aW1nLzI2MjA5ODY3LnBuZw==/315x250%23c/mOMDuB.png"
   tags: [Unity, Game Jam, Senac Game Jam]
   engine: "Unity (C#)"
-  itch_url: "https://murilloyonamine.itch.io/blender-crashing"
+  itch_url: "https://dansfelistoque.itch.io/blender-crashing"
   role_pt: "Programador de Gameplay"
   role_en: "Gameplay Programmer"
   team: "Murillo, Dans, Fernando Zatta, Pedro Alves"
@@ -39,9 +52,9 @@
 
 - id: earl-gray
   title: "Earl Gray"
-  date: "2024-06-06"
+  date: "2024-06-08"
   image: "https://img.itch.zone/aW1hZ2UvMjc1NzE3Ny8xNjgzOTIzMi5qcGc=/original/%2BlLsH3.jpg"
-  tags: [Visual Novel, Unity, University Project]
+  tags: [Visual Novel, Unity, Game Jam, Criar Jogos Game Jam]
   engine: "Unity (C#)"
   itch_url: "https://murilloyonamine.itch.io/earl-gray"
   role_pt: "Programador de Gameplay e Tools"
