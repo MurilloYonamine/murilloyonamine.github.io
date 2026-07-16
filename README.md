@@ -1,17 +1,20 @@
 <a id="readme-top"></a>
 
+<div align="center">
+
 [![Contributors][contributors-shield]][contributors-url]
 [![License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-<br />
-
-<div align="center">
+[![Jekyll][Jekyll-badge]][Jekyll-url]
+[![HTML5][HTML-badge]][HTML-url]
+[![CSS3][CSS-badge]][CSS-url]
+[![JavaScript][JS-badge]][JS-url]
 
 <h3 align="center">Murillo Yonamine — Personal Portfolio</h3>
 
 <p align="center">
-Personal website featuring projects, posts and resources about web development.
+Personal website featuring projects, games and resources about game development.
+<br />
 <br />
 <a href="https://murilloyonamine.github.io"><strong>View Demo »</strong></a>
 <br />
@@ -25,17 +28,24 @@ Personal website featuring projects, posts and resources about web development.
 
 </div>
 
-
 ## About the Project
 
-[![Screenshot][product-screenshot]](https://murilloyonamine.github.io)
+This repository contains the source code for my static personal website, built with Jekyll and hosted on GitHub Pages. It showcases my game projects, jams, internship experience, and game development skills.
 
-This repository contains the source code for my static personal website, built with Jekyll and hosted on GitHub Pages. It aggregates projects, posts, and resources related to web development.
+### Screenshots
 
-## Built With
-
-[![Jekyll][Jekyll-badge]][Jekyll-url] [![HTML5][HTML-badge]][HTML-url] [![CSS3][CSS-badge]][CSS-url]
-[![JavaScript][JS-badge]][JS-url]
+<div align="center">
+  <h4>Home / Projects</h4>
+  <img src="assets/img/projects.png" alt="Projects Page Screenshot" width="700">
+  <br />
+  <br />
+  <h4>About Page</h4>
+  <img src="assets/img/about-me.png" alt="About Page Screenshot" width="700">
+  <br />
+  <br />
+  <h4>Lightbox Gallery</h4>
+  <img src="assets/img/gallery.png" alt="Lightbox Gallery Screenshot" width="700">
+</div>
 
 ## License
 

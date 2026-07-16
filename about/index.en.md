@@ -29,7 +29,7 @@ permalink: /en/about/
       </div>
     </div>
     <div class="about-caption">
-      Giving an interview on television about my experience with game jams
+      My interview for the RedeTV channel about Game Jams.
     </div>
   </div>
 
@@ -38,16 +38,9 @@ permalink: /en/about/
   </p>
 
   <div class="about-section">
-    <h2>Development Philosophy</h2>
-    <p>
-      For me, gameplay programming is not just about making the code work, but ensuring the <strong>game feel</strong> (the control feedback) is satisfying and responsive. I am fascinated by technical polish ("game juice") — fine-tuning jumps, physical collision responses, and particle timing. I like to write clean, modular code so artists and designers can iterate mechanics quickly and independently.
-    </p>
-  </div>
-
-  <div class="about-section">
     <h2>Game Jam Experience</h2>
     <p>
-      I have been actively participating in game jams since the beginning of my college degree. I believe game development is, at its core, a collaborative effort. My experiences in game hackathons taught me to translate abstract game design ideas into playable mechanics under tight time constraints, improving my communication with artists and sound designers to deliver stable and fun executables at the end of 48 hours.
+      I have been actively participating in game jams since the beginning of college. I believe game development is, essentially, a collective effort. This experience has taught me to translate abstract game design ideas into playable mechanics under extreme time constraints, improving my communication with artists and sound designers to deliver a stable and fun executable at the end of the few hours.
     </p>
     <table class="jam-table">
       <thead>
@@ -65,17 +58,17 @@ permalink: /en/about/
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 7 (2026)</td>
-          <td class="jam-result"><strong>2nd Place</strong> 🥈</td>
+          <td class="jam-result"><strong>2nd Place</strong></td>
           <td class="jam-game"><a href="https://murilloyonamine.itch.io/comigo-miau-pode" target="_blank">Comigo Miau Pode!</a></td>
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 6 (2025)</td>
-          <td class="jam-result"><strong>1st Place</strong> 🏆</td>
+          <td class="jam-result"><strong>1st Place</strong></td>
           <td class="jam-game"><a href="https://dansfelistoque.itch.io/blender-crashing" target="_blank">Blender Crashing</a></td>
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 5 (2025)</td>
-          <td class="jam-result"><strong>1st Place</strong> 🏆</td>
+          <td class="jam-result"><strong>1st Place</strong></td>
           <td class="jam-game"><a href="https://murilloyonamine.itch.io/soldiers-on-saving" target="_blank">Soldiers On Saving</a></td>
         </tr>
         <tr>

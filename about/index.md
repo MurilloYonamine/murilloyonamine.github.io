@@ -58,17 +58,17 @@ permalink: /br/about/
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 7 (2026)</td>
-          <td class="jam-result"><strong>2º lugar</strong> 🥈</td>
+          <td class="jam-result"><strong>2º lugar</strong></td>
           <td class="jam-game"><a href="https://murilloyonamine.itch.io/comigo-miau-pode" target="_blank">Comigo Miau Pode!</a></td>
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 6 (2025)</td>
-          <td class="jam-result"><strong>1º lugar</strong> 🏆</td>
+          <td class="jam-result"><strong>1º lugar</strong></td>
           <td class="jam-game"><a href="https://dansfelistoque.itch.io/blender-crashing" target="_blank">Blender Crashing</a></td>
         </tr>
         <tr>
           <td class="jam-name">Senac Game Jam 5 (2025)</td>
-          <td class="jam-result"><strong>1º lugar</strong> 🏆</td>
+          <td class="jam-result"><strong>1º lugar</strong></td>
           <td class="jam-game"><a href="https://murilloyonamine.itch.io/soldiers-on-saving" target="_blank">Soldiers On Saving</a></td>
         </tr>
         <tr>
