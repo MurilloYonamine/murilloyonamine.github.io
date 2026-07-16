@@ -5,44 +5,156 @@ lang: en
 permalink: /en/about/
 ---
 
-<section class="about">
+<div class="about">
+
   <p>
-    Hi, I’m <strong>Murillo Gomes Yonamine</strong>, a <strong>Game Development student</strong> at Centro Universitário Senac
-    and a <strong>game development intern</strong> focused on gameplay programming.
-    I mainly work with <strong>Unity (C#)</strong>, and I also have experience with
-    <strong>Godot, Unreal Engine</strong>, and <strong>GameMaker</strong>.
+    Hi, I’m <strong>Murillo Gomes Yonamine</strong>, a Game Development student at Centro Universitário Senac and a gameplay programming intern. I mainly work with Unity (C#) and have hands-on experience with Godot and GameMaker.
   </p>
 
-  <figure class="about-figure">
-    <img
-      src="/assets/img/about/interview.gif"
-      alt="Gameplay screenshot showing player interaction"
-      class="about-image"
-    />
-
-    <figcaption class="about-caption">
+  <div>
+    <div class="crt-tv-container">
+      <div class="crt-screen-wrapper">
+        <div class="scanlines"></div>
+        <img src="{{ '/assets/img/about/interview.gif' | relative_url }}" alt="Giving an interview on TV about game jams" class="crt-gif">
+      </div>
+      <div class="tv-controls">
+        <div class="tv-dials">
+          <div class="tv-dial"></div>
+          <div class="tv-dial"></div>
+        </div>
+        <div class="tv-led-group">
+          <span>POWER</span>
+          <div class="tv-led"></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-caption">
       Giving an interview on television about my experience with game jams
-    </figcaption>
-  </figure>
+    </div>
+  </div>
 
   <p>
-    I’ve been actively participating in <strong>game jams</strong> since the beginning of my degree,
-    which gave me hands-on experience with fast iteration, teamwork, and real production constraints.
-    During these projects, I usually take responsibility for
-    <strong>gameplay systems</strong>, <strong>mechanics implementation</strong>,
-    <strong>bug fixing</strong>, and <strong>project organization</strong>.
+    My career goal is to constantly evolve as a gameplay and systems programmer, focusing on creating clean and scalable code architectures in Unity and Godot. I seek to apply SOLID principles and design patterns to optimize game performance and build tools that accelerate and facilitate the creative pipeline for the entire team.
   </p>
 
-  <img
-    src="/assets/img/meu-jogo-incrivel.svg"
-    alt="Lorem ipsum dolor sit amet"
-    class="about-image right"
-  />
+  <div class="about-section">
+    <h2>Development Philosophy</h2>
+    <p>
+      For me, gameplay programming is not just about making the code work, but ensuring the <strong>game feel</strong> (the control feedback) is satisfying and responsive. I am fascinated by technical polish ("game juice") — fine-tuning jumps, physical collision responses, and particle timing. I like to write clean, modular code so artists and designers can iterate mechanics quickly and independently.
+    </p>
+  </div>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <div class="about-section">
+    <h2>Game Jam Experience</h2>
+    <p>
+      I have been actively participating in game jams since the beginning of my college degree. I believe game development is, at its core, a collaborative effort. My experiences in game hackathons taught me to translate abstract game design ideas into playable mechanics under tight time constraints, improving my communication with artists and sound designers to deliver stable and fun executables at the end of 48 hours.
+    </p>
+    <table class="jam-table">
+      <thead>
+        <tr>
+          <th>Game Jam</th>
+          <th>Result / Placement</th>
+          <th>Game Developed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="jam-name">Scienza Game Jam (2026)</td>
+          <td class="jam-result">In progress</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/futebas" target="_blank">Futebas!</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Senac Game Jam 7 (2026)</td>
+          <td class="jam-result"><strong>2nd Place</strong> 🥈</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/comigo-miau-pode" target="_blank">Comigo Miau Pode!</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Senac Game Jam 6 (2025)</td>
+          <td class="jam-result"><strong>1st Place</strong> 🏆</td>
+          <td class="jam-game"><a href="https://dansfelistoque.itch.io/blender-crashing" target="_blank">Blender Crashing</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Senac Game Jam 5 (2025)</td>
+          <td class="jam-result"><strong>1st Place</strong> 🏆</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/soldiers-on-saving" target="_blank">Soldiers On Saving</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Senac Game Jam 4 (2024)</td>
+          <td class="jam-result">4th Place</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/cloud" target="_blank">Cloud</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Senac Game Jam 3 (2024)</td>
+          <td class="jam-result">3rd Place</td>
+          <td class="jam-game"><a href="https://arii-mms.itch.io/quadrilha-maluca" target="_blank">Quadrilha Maluca</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Ctrl Alt FRAME Jam (2024)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/mind-catastrophe" target="_blank">Mind Catastrophe</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Ctrl Alt Jam 3 (2024)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/um-passo-de-cada-vez" target="_blank">Um Passo de Cada Vez</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">HUG Jam 1 (2024)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/the-protector-of-otherside-foot" target="_blank">The Protector of Otherside Foot</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Global Game Jam (2025)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/mahjong-do-bicho" target="_blank">Mahjong do Bicho</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">GB Jam (2024)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://leithtetij.itch.io/light-out" target="_blank">Light Out</a></td>
+        </tr>
+        <tr>
+          <td class="jam-name">Criar Jogos Game Jam (2024)</td>
+          <td class="jam-result">Participation</td>
+          <td class="jam-game"><a href="https://murilloyonamine.itch.io/earl-gray" target="_blank">Earl Gray</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </p>
+  <div class="about-section">
+    <h2>Technical Arsenal</h2>
+    <div class="tech-cards">
+      <div class="tech-card">
+         <h3>ENGINES</h3>
+         <ul>
+           <li>Unity (C#)</li>
+           <li>Godot (GDScript, C#)</li>
+           <li>GameMaker (GML)</li>
+         </ul>
+       </div>
+ 
+       <div class="tech-card">
+         <h3>TECHNOLOGIES</h3>
+         <ul>
+           <li>Git / GitHub</li>
+           <li>DOTween</li>
+           <li>VContainer</li>
+           <li>Reaper</li>
+           <li>Photoshop</li>
+         </ul>
+       </div>
 
-</section>
+      <div class="tech-card">
+        <h3>SKILLS</h3>
+        <ul>
+          <li>Gameplay Programming</li>
+          <li>Mechanics Implementation</li>
+          <li>Bug Fixing</li>
+          <li>Shaders</li>
+          <li>Math & Physics for Games</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

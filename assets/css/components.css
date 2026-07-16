@@ -102,7 +102,6 @@
         width: 48px;
     }
 
-    /* On small screens, hide the fixed toggles and show them inside the nav */
     #theme-toggle-btn {
         display: none !important;
     }
@@ -111,7 +110,6 @@
         display: none !important;
     }
 
-    /* When the toggle is moved into the nav we wrap it in a list item */
     #main-nav .nav-theme-toggle-item {
         display: block;
         padding: 12px 0;

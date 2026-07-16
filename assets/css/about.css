@@ -1,46 +1,219 @@
+@import url("tv.css");
+
 .about {
     max-width: 900px;
     margin: auto;
     padding: 2rem;
     line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-.about-figure .about-image {
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-.about-figure .about-caption {
+.about-section h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px dashed currentColor;
+    color: inherit;
+}
+
+.about-section p {
+    margin: 0;
+}
+
+/* Tabela de especificações técnicas do Arsenal */
+.about-specs {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.about-specs tr {
+    border-bottom: 1px dotted currentColor;
+}
+
+.about-specs tr:last-child {
+    border-bottom: none;
+}
+
+.about-specs td {
+    padding: 0.6rem 0.5rem;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.about-specs td.label {
+    font-weight: bold;
+    width: 180px;
+    color: inherit;
+    opacity: 0.85;
+}
+
+/* Responsividade Geral */
+@media (max-width: 680px) {
+    .about {
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .about-specs td {
+        display: block;
+        padding: 0.3rem 0;
+    }
+    .about-specs td.label {
+        width: 100%;
+        padding-top: 0.6rem;
+    }
+    .about-specs tr {
+        padding-bottom: 0.6rem;
+        display: block;
+    }
+}
+
+/* Cards do Arsenal Técnico */
+.tech-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tech-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 2px dashed currentColor;
+    padding-bottom: 0.4rem;
+    opacity: 0.95;
+}
+
+.tech-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.tech-card li {
     font-size: 0.9rem;
-    color: var(--primary-highlight-color);
-    text-align: center;
+    position: relative;
+    padding-left: 0.8rem;
 }
 
-.about-image.right {
-    max-width: 420px;
-    float: right;
-    margin: 1rem 0 1rem 2rem;
+.tech-card li::before {
+    content: "-"; /* Tracinho simples e elegante */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    opacity: 0.7;
 }
 
-
-.tech-list,
-.links {
-    padding-left: 1.2rem;
+@media (max-width: 680px) {
+    .tech-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
-.tech-list li,
-.links li {
-    margin-bottom: 0.5rem;
+/* Tabela de Game Jams de 3 Colunas */
+.jam-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-    .about-image.right {
-        float: none;
-        max-width: 100%;
-        margin: 2rem 0;
+.jam-table th,
+.jam-table td {
+    padding: 0.6rem 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 0.95rem;
+    border-bottom: 1px dotted currentColor;
+}
+
+.jam-table th {
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+}
+
+.jam-table tr:last-child td {
+    border-bottom: none;
+}
+
+.jam-table td.jam-name {
+    font-weight: bold;
+    width: 35%;
+}
+
+.jam-table td.jam-result {
+    width: 30%;
+}
+
+.jam-table td.jam-game {
+    width: 35%;
+}
+
+.jam-table td.jam-game a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.jam-table td.jam-game a:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    .jam-table th {
+        display: none;
+    }
+    .jam-table td {
+        display: block;
+        width: 100% !important;
+        padding: 0.3rem 0;
+        border-bottom: none;
+    }
+    .jam-table tr {
+        display: block;
+        padding: 0.8rem 0;
+        border-bottom: 1px dotted currentColor;
+    }
+    .jam-table tr:last-child {
+        border-bottom: none;
+    }
+    .jam-table td.jam-name {
+        font-size: 1.05rem;
+        padding-bottom: 0.2rem;
+    }
+    .jam-table td.jam-result::before {
+        content: "Resultado: ";
+        font-weight: bold;
+        opacity: 0.8;
+    }
+    .jam-table td.jam-game::before {
+        content: "Jogo: ";
+        font-weight: bold;
+        opacity: 0.8;
     }
 }

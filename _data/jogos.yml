@@ -78,9 +78,9 @@
 
 - id: light-out
   title: "Light Out"
-  date: "2025-09-23"
+  date: "2024-09-23"
   image: "https://img.itch.zone/aW1nLzE3ODk1Mzk0LnBuZw==/original/j13jmv.png"
-  tags: [Unity, Game Jam]
+  tags: [Unity, Game Jam, GB Jam]
   engine: "Unity (C#)"
   itch_url: "https://leithtetij.itch.io/light-out"
   role_pt: "Programador de Gameplay"
