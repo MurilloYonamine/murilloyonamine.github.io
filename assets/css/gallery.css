@@ -110,23 +110,23 @@
 }
 
 .lightbox-prev {
-    position: absolute;
-    left: -70px;
+    position: fixed;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .lightbox-next {
-    position: absolute;
-    right: -70px;
+    position: fixed;
+    right: 40px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .lightbox-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
+    position: fixed;
+    top: 40px;
+    right: 40px;
     padding: 4px 10px;
 }
 
@@ -170,6 +170,7 @@
         object-fit: cover;
     }
     .lightbox-close {
+        position: absolute;
         top: -45px;
         right: 10px;
     }
