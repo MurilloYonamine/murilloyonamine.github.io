@@ -115,6 +115,10 @@ layout: description
                 {% if jogo.github_url %}
                 <a href="{{ jogo.github_url }}" target="_blank">{% if page.lang == 'en' %}SOURCE CODE{% else %}CÓDIGO FONTE{% endif %}</a>
                 {% endif %}
+
+                {% if jogo.gallery %}
+                <a href="#" class="gallery-trigger" data-gallery="{{ jogo.gallery | join: ',' }}">{% if page.lang == 'en' %}Gallery{% else %}Galeria{% endif %}</a>
+                {% endif %}
             </div>
         </div>
     </li>
@@ -124,4 +128,5 @@ layout: description
 
 {% if page.layout == 'projects' %}
 <script defer src="{{ '/assets/js/projects.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
 {% endif %}
